@@ -19,7 +19,7 @@
           style="--stagger: 1; --delay: 10ms"
           data-animate
         >
-          <h1 class="mx-auto font-medium text-center text-pretty bg-gradient-to-b from-white/90 to-white/30 bg-clip-text text-3xl text-transparent lg:max-w-3xl lg:text-4xl">
+          <h1 class="mx-auto font-medium text-center text-pretty bg-gradient-to-b from-white/90 to-white/30 bg-clip-text text-3xl lg:max-w-3xl lg:text-4xl">
             <slot
               name="hero_title"
               mdc-unwrap="p"
@@ -27,7 +27,7 @@
           </h1>
 
           <!-- subtitle -->
-          <h2 class="mx-auto mt-4 max-w-xl text-center text-lg antialiased text-white/60">
+          <h2 class="mx-auto mt-4 max-w-xl text-center text-lg antialiased">
             <slot
               name="hero_subtitle"
               mdc-unwrap="p"

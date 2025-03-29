@@ -7,9 +7,11 @@
   --font-newsreader: "Newsreader", serif;
   --font-geist: "Geist", sans-serif;
   --font-mono: "Geist Mono", sans-serif;
+  --font-primary: #574ABE;
+  --font-secondary: #FFC554;
 
   --color-main: var(--ui-bg);
-  --color-secondary: var(--color-secondary);
+  --color-secondary: var(--font-secondary);
   --color-card: var(--color-card);
   --color-card-hover: var(--color-card-hover);
   --color-primary: var(--font-primary);
@@ -28,7 +30,7 @@ html.dark {
   --bg-card: #282828;
   --bg-card-hover: #343434;
 
-  --font-primary: #ededed;
+  --font-primary: #574ABE;
   --font-muted: #808080;
   --font-inverted: #282828;
 
@@ -145,4 +147,8 @@ html, body, #__nuxt, #__layout {
   figcaption {
     @apply text-sm text-neutral-500 dark:text-neutral-400 mt-2;
   }
+}
+
+.nav-menu {
+  @apply flex justify-between items-center px-4 py-2 border-0 text-xs hover:border-b-2 font-medium text-black hover:font-semibold hover:text-primary hover:border-primary cursor-pointer;
 }
