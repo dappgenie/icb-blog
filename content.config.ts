@@ -84,6 +84,46 @@ export const collections = {
       schema: commonArticleSchema,
     }),
   ),
+  technology_en: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'en/technology/*.md',
+        prefix: '/en/technology',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  technology_fr: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'fr/technology/*.md',
+        prefix: '/fr/technology',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  cashback_en: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'en/cashback/*.md',
+        prefix: '/en/cashback',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  cashback_fr: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'fr/cashback/*.md',
+        prefix: '/fr/cashback',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
   projects_en: defineCollection(
     asSeoCollection({
       type: 'data',
@@ -102,7 +142,7 @@ export const collections = {
     type: 'data',
     source: 'stack.json',
     schema: z.object({
-      items: z.array(
+      ite9ms: z.array(
         z.object({
           name: z.string().nonempty(),
           link: z.string().url(),

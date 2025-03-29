@@ -24,8 +24,10 @@ defineShortcuts({
   meta_o: {
     usingInput: true,
     handler: () => {
-      copy(profile.email!)
-      toast.success(t('global.email_copied'))
+      if (profile.email) {
+        copy(profile.email)
+        toast.success(t('global.email_copied'))
+      }
     },
   },
 })
