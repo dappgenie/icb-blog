@@ -17,17 +17,10 @@ function scrollToTop() {
 
 <template>
   <div class="fixed bottom-36 right-3 z-50 sm:bottom-20">
-    <SpotlightButton
-      aria-label="scroll to top button"
-      class="flex size-10 items-center justify-center p-1 text-muted transition-all duration-200"
-      rounded
-      :class="{ 'opacity-100': isScrolling, 'opacity-0': !isScrolling }"
-      @click="scrollToTop"
-    >
-      <UIcon
-        name="heroicons-arrow-up"
-        class="z-20 size-6"
-      />
+    <SpotlightButton aria-label="scroll to top button"
+      class="flex size-10 items-center justify-center p-1 text-muted transition-all duration-200 !bg-primary" rounded
+      :class="{ 'opacity-100': isScrolling, 'opacity-0': !isScrolling }" @click="scrollToTop">
+      <UIcon name="heroicons-arrow-up" class="z-20 size-6 text-white" />
     </SpotlightButton>
   </div>
 </template>

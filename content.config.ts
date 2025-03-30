@@ -104,22 +104,82 @@ export const collections = {
       schema: commonArticleSchema,
     }),
   ),
-  cashback_en: defineCollection(
+  investment_en: defineCollection(
     asSeoCollection({
       type: 'page',
       source: {
-        include: 'en/cashback/*.md',
-        prefix: '/en/cashback',
+        include: 'en/investment/*.md',
+        prefix: '/en/investment',
       },
       schema: commonArticleSchema,
     }),
   ),
-  cashback_fr: defineCollection(
+  investment_fr: defineCollection(
     asSeoCollection({
       type: 'page',
       source: {
-        include: 'fr/cashback/*.md',
-        prefix: '/fr/cashback',
+        include: 'fr/investment/*.md',
+        prefix: '/fr/investment',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  health_en: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'en/health/*.md',
+        prefix: '/en/health',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  health_fr: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'fr/health/*.md',
+        prefix: '/fr/health',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  fashion_en: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'en/fashion/*.md',
+        prefix: '/en/fashion',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  fashion_fr: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'fr/fashion/*.md',
+        prefix: '/fr/fashion',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  lifestyle_en: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'en/lifestyle/*.md',
+        prefix: '/en/lifestyle',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  lifestyle_fr: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'fr/lifestyle/*.md',
+        prefix: '/fr/lifestyle',
       },
       schema: commonArticleSchema,
     }),
