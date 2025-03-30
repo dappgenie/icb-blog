@@ -12,7 +12,7 @@ image: https://i.pinimg.com/736x/d7/78/31/d77831eb7ded43879b8932c68e29112d.jpg
 readingTime: "11"
 ---
 
-![Psychology of Cashback](/articles/psychology-cashback.jpg)
+![Psychology of Cashback](https://i.pinimg.com/736x/d7/78/31/d77831eb7ded43879b8932c68e29112d.jpg)
 
 Cashback and rewards programs have become ubiquitous in the modern marketplace, with virtually every major retailer offering some form of "money back" incentive. But beneath their seemingly straightforward premise—spend money, get some back—lies a sophisticated understanding of human psychology. These programs tap into fundamental aspects of our decision-making processes, creating powerful motivations that shape consumer behavior in ways we might not even recognize.
 

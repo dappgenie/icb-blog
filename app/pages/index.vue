@@ -9,10 +9,24 @@ import BlogSection from '~/components/blog/BlogSection.vue'
 
 const { locale } = useI18n()
 
+// Define proper article type
+interface Article {
+  _path?: string
+  title: string
+  description?: string
+  tags?: string[]
+  keywords?: string[]
+  category?: string
+  image?: string
+  date?: string
+  path?: string
+  [key: string]: unknown // For other properties
+}
+
 // Fetch technologies data
 const { data: technologiesList } = await useAsyncData(`technology-${locale.value}`, async () => {
   const collection = (`technology_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Collections['technology_en'][] | Collections['technology_fr'][]
+  return await queryCollection(collection).all() as Article[]
 }, {
   watch: [locale],
 })
@@ -20,7 +34,7 @@ const { data: technologiesList } = await useAsyncData(`technology-${locale.value
 // Fetch cashback data
 const { data: investmentList } = await useAsyncData(`investment-${locale.value}`, async () => {
   const collection = (`investment_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Collections['investment_en'][] | Collections['investment_fr'][]
+  return await queryCollection(collection).all() as Article[]
 }, {
   watch: [locale],
 })
@@ -28,7 +42,7 @@ const { data: investmentList } = await useAsyncData(`investment-${locale.value}`
 // Fetch health and wellness data
 const { data: healthList } = await useAsyncData(`health-${locale.value}`, async () => {
   const collection = (`health_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Collections['health_en'][] | Collections['health_fr'][]
+  return await queryCollection(collection).all() as Article[]
 }, {
   watch: [locale],
 })
@@ -36,7 +50,7 @@ const { data: healthList } = await useAsyncData(`health-${locale.value}`, async 
 // Fetch fashion data
 const { data: fashionList } = await useAsyncData(`fashion-${locale.value}`, async () => {
   const collection = (`fashion_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Collections['fashion_en'][] | Collections['fashion_fr'][]
+  return await queryCollection(collection).all() as Article[]
 }, {
   watch: [locale],
 })
@@ -44,48 +58,119 @@ const { data: fashionList } = await useAsyncData(`fashion-${locale.value}`, asyn
 // Fetch lifestyle data
 const { data: lifestyleList } = await useAsyncData(`lifestyle-${locale.value}`, async () => {
   const collection = (`lifestyle_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Collections['lifestyle_en'][] | Collections['lifestyle_fr'][]
+  return await queryCollection(collection).all() as Article[]
 }, {
   watch: [locale],
 })
 
-// Computed properties for visible items
+// Search functionality
+const searchQuery = ref('')
+const isSearching = computed(() => searchQuery.value.trim().length > 0)
+
+const handleSearch = (query: string) => {
+  searchQuery.value = query
+}
+
+// Category filtering
+const selectedCategories = ref<string[]>([])
+const isFilteringByCategory = computed(() => selectedCategories.value.length > 0)
+
+// Helper function to check if an article matches selected categories
+const matchesSelectedCategories = (article: Article) => {
+  if (!isFilteringByCategory.value) return true
+
+  // Check if article has tags or keywords that match selected categories
+  const articleTags = article.tags || []
+  const articleKeywords = article.keywords || []
+  const articleCategory = article.category ? article.category.toLowerCase() : ''
+
+  // Check if any selected category matches article's tags, keywords, or category
+  return selectedCategories.value.some((categoryId) => {
+    const categoryLower = categoryId.toLowerCase()
+    return articleTags.some((tag: string) => tag.toLowerCase().includes(categoryLower))
+      || articleKeywords.some((keyword: string) => keyword.toLowerCase().includes(categoryLower))
+      || articleCategory.includes(categoryLower)
+      // Map specific category IDs to collection types
+      || (categoryId === 'technology' && article._path?.includes('/technology/'))
+      || (categoryId === 'investment' && article._path?.includes('/investment/'))
+      || (categoryId === 'health' && article._path?.includes('/health/'))
+      || (categoryId === 'fashion' && article._path?.includes('/fashion/'))
+      || (categoryId === 'lifestyle' && article._path?.includes('/lifestyle/'))
+  })
+}
+
+// Helper function to filter articles by search query and categories
+const filterArticles = (articles: Article[]) => {
+  if (!articles) return []
+
+  return articles.filter((article) => {
+    // Text search filter
+    const matchesSearch = !searchQuery.value.trim()
+      || article.title.toLowerCase().includes(searchQuery.value.toLowerCase())
+      || (article.description?.toLowerCase().includes(searchQuery.value.toLowerCase()))
+
+    // Category filter
+    const matchesCategories = matchesSelectedCategories(article)
+
+    return matchesSearch && matchesCategories
+  })
+}
+
+// Computed properties for visible items with search and category filtering
 const visibleTechnologies = computed(() => {
-  return technologiesList.value ? [...technologiesList.value] : []
+  return technologiesList.value ? filterArticles([...technologiesList.value]) : []
 })
 
 const visibleInvestment = computed(() => {
-  return investmentList.value ? [...investmentList.value] : []
+  return investmentList.value ? filterArticles([...investmentList.value]) : []
 })
 
 const visibleHealth = computed(() => {
-  return healthList.value ? [...healthList.value] : []
+  return healthList.value ? filterArticles([...healthList.value]) : []
 })
 
 const visibleFashion = computed(() => {
-  return fashionList.value ? [...fashionList.value] : []
+  return fashionList.value ? filterArticles([...fashionList.value]) : []
 })
 
 const visibleLifestyle = computed(() => {
-  return lifestyleList.value ? [...lifestyleList.value] : []
+  return lifestyleList.value ? filterArticles([...lifestyleList.value]) : []
 })
 
-// Search functionality
-const searchQuery = ref('')
-const handleSearch = (query: string) => {
-  searchQuery.value = query
-  // Implement search functionality here
-  console.log('Searching for:', query)
-}
+// Get all articles across categories for search results
+const allArticles = computed(() => {
+  const articles: Article[] = []
+
+  if (technologiesList.value) articles.push(...technologiesList.value)
+  if (investmentList.value) articles.push(...investmentList.value)
+  if (healthList.value) articles.push(...healthList.value)
+  if (fashionList.value) articles.push(...fashionList.value)
+  if (lifestyleList.value) articles.push(...lifestyleList.value)
+
+  return articles
+})
+
+// Filtered search results across all categories
+const searchResults = computed(() => {
+  if (!searchQuery.value.trim() && !isFilteringByCategory.value) return []
+  return filterArticles(allArticles.value)
+})
+
+// Total count of search results
+const searchResultsCount = computed(() => searchResults.value.length)
+
+// Check if we're filtering (either by search or categories)
+const isFiltering = computed(() => isSearching.value || isFilteringByCategory.value)
 
 // Add categories list
 const categories = ref([
-  { id: 'cashback', label: 'Cashback' },
   { id: 'technology', label: 'Technology' },
-  { id: 'electronics', label: 'Electronics' },
-  { id: 'fashion', label: 'Fashion' },
-  { id: 'home_appliances', label: 'Home Appliances' },
+  { id: 'investment', label: 'Investment' },
   { id: 'health', label: 'Health and Wellness' },
+  { id: 'fashion', label: 'Fashion' },
+  { id: 'lifestyle', label: 'Lifestyle' },
+  { id: 'electronics', label: 'Electronics' },
+  { id: 'home_appliances', label: 'Home Appliances' },
   { id: 'medicine', label: 'Medicine and Fitness' },
   { id: 'travel', label: 'Travel' },
   { id: 'toys', label: 'Toys and Entertainment' },
@@ -95,10 +180,11 @@ const categories = ref([
   { id: 'furniture', label: 'Furniture' },
   { id: 'food', label: 'Food and Beverages' },
 ])
-// Handle see all clicks
-const handleSeeAll = (section: string) => {
-  console.log(`See all clicked for ${section}`)
-  // Implement navigation to section page
+
+// Clear all filters
+const clearFilters = () => {
+  searchQuery.value = ''
+  selectedCategories.value = []
 }
 
 if (!technologiesList.value && !investmentList.value)
@@ -113,32 +199,85 @@ if (!technologiesList.value && !investmentList.value)
         <!-- Blogs header with search -->
         <BlogsHeader title="Blogs" @search="handleSearch" />
 
+        <!-- Filter indicators -->
+        <div v-if="isFiltering" class="px-4 mt-4 flex flex-wrap items-center gap-2">
+          <!-- Search indicator -->
+          <div v-if="isSearching" class="text-sm text-gray-600">
+            Found {{ searchResultsCount }} result{{ searchResultsCount !== 1 ? 's' : '' }} for "{{ searchQuery }}"
+          </div>
+
+          <!-- Category filters indicator -->
+          <div v-if="isFilteringByCategory" class="flex flex-wrap gap-1 items-center">
+            <span v-if="!isSearching" class="text-sm text-gray-600">Filtered by:</span>
+            <div v-for="catId in selectedCategories" :key="catId"
+              class="bg-primary text-white text-xs px-2 py-1 rounded-full flex items-center">
+              {{categories.find(c => c.id === catId)?.label}}
+              <button class="ml-1 text-white hover:text-gray-200"
+                @click="selectedCategories = selectedCategories.filter(id => id !== catId)">
+                ×
+              </button>
+            </div>
+          </div>
+
+          <!-- Clear filters button -->
+          <button v-if="isFiltering" class="text-xs text-gray-500 hover:text-primary ml-auto underline"
+            @click="clearFilters">
+            Clear all filters
+          </button>
+        </div>
+
         <!-- Main content area -->
         <div class="flex-1 px-4 mt-6">
-          <!-- Featured blog post -->
-          <FeaturedBlogPost :post="visibleInvestment?.[0] ?? {}" />
-
           <!-- Categories -->
-          <CategoriesSection :categories="categories" />
-          <!-- Investment section -->
-          <BlogSection v-if="visibleInvestment?.length" title="Investment" :articles="visibleInvestment" :max-items="5"
-            @see-all="handleSeeAll('investment')" />
+          <CategoriesSection v-model="selectedCategories" :categories="categories" />
 
-          <!-- Technology section -->
-          <BlogSection v-if="visibleTechnologies?.length" title="Technology" :articles="visibleTechnologies"
-            :max-items="5" @see-all="handleSeeAll('technology')" />
+          <!-- Search/Filter results section -->
+          <div v-if="isFiltering" class="mb-8 bg-white rounded-lg p-4">
+            <div class="mb-4">
+              <h3 class="text-sm text-primary font-semibold">
+                {{ isSearching ? 'Search Results' : 'Filtered Results' }}
+              </h3>
+            </div>
 
-          <!-- Health and Wellness section -->
-          <BlogSection v-if="visibleHealth?.length" title="Health and Wellness" :articles="visibleHealth" :max-items="5"
-            @see-all="handleSeeAll('health')" />
+            <div v-if="searchResults.length"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              <BlogCard v-for="(article, index) in searchResults" :key="index" :article="article" />
+            </div>
 
-          <!-- Fashion section -->
-          <BlogSection v-if="visibleFashion?.length" title="Fashion" :articles="visibleFashion" :max-items="5"
-            @see-all="handleSeeAll('fashion')" />
+            <div v-else class="text-center py-8">
+              <p class="text-gray-500">
+                No articles found matching your criteria.
+              </p>
+              <button class="mt-2 text-primary hover:underline" @click="clearFilters">
+                Clear filters
+              </button>
+            </div>
+          </div>
 
-          <!-- Lifestyle section -->
-          <BlogSection v-if="visibleLifestyle?.length" title="Lifestyle" :articles="visibleLifestyle" :max-items="5"
-            @see-all="handleSeeAll('lifestyle')" />
+          <!-- Regular content (shown when not filtering) -->
+          <template v-if="!isFiltering">
+            <!-- Featured blog post -->
+            <FeaturedBlogPost :post="visibleInvestment?.[0] ?? {}" />
+
+            <!-- Investment section -->
+            <BlogSection v-if="visibleInvestment?.length" title="Investment" :articles="visibleInvestment"
+              :max-items="5" />
+
+            <!-- Technology section -->
+            <BlogSection v-if="visibleTechnologies?.length" title="Technology" :articles="visibleTechnologies"
+              :max-items="5" />
+
+            <!-- Health and Wellness section -->
+            <BlogSection v-if="visibleHealth?.length" title="Health and Wellness" :articles="visibleHealth"
+              :max-items="5" />
+
+            <!-- Fashion section -->
+            <BlogSection v-if="visibleFashion?.length" title="Fashion" :articles="visibleFashion" :max-items="5" />
+
+            <!-- Lifestyle section -->
+            <BlogSection v-if="visibleLifestyle?.length" title="Lifestyle" :articles="visibleLifestyle"
+              :max-items="5" />
+          </template>
         </div>
       </div>
     </main>

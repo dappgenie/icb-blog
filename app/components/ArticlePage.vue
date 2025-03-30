@@ -31,32 +31,32 @@ const collectionType = computed(() => {
   switch (contentType.value) {
     case 'investment':
       return {
-        slug: '/investment',
+        slug: '/investment/articles',
         label: 'Investment',
       }
     case 'technology':
       return {
-        slug: '/technology',
+        slug: '/technology/articles',
         label: 'Technology',
       }
     case 'fashion':
       return {
-        slug: '/fashion',
+        slug: '/fashion/articles',
         label: 'Fashion',
       }
     case 'health':
       return {
-        slug: '/health',
+        slug: '/health/articles',
         label: 'Health',
       }
     case 'lifestyle':
       return {
-        slug: '/lifestyle',
+        slug: '/lifestyle/articles',
         label: 'Lifestyle',
       }
     default:
       return {
-        slug: '/articles',
+        slug: '/writings/articles',
         label: 'Articles',
       }
   }
@@ -153,12 +153,18 @@ if (hasImage.value) {
         <p v-if="hasReadingTime" class="hidden sm:block">
           |
         </p>
-        <UTooltip :text="$t('writing.copy_link')" :shortcuts="['⌘', 'K']">
-          <p class="flex cursor-pointer select-none items-center gap-1 transition-colors duration-200 hover:text-primary"
-            @click="copyArticleLink">
-            {{ $t("writing.share") }}
-          </p>
-        </UTooltip>
+        <button
+          class="flex cursor-pointer select-none items-start gap-1 transition-colors duration-200 hover:text-primary"
+          @click="copyArticleLink">
+          {{ $t("writing.share") }}
+          <UIcon name="lucide:link" class="size-4 mt-[6px]" />
+        </button>
+      </div>
+      <div class="mb-8">
+        <span v-for="tag in page.tags" :key="tag"
+          class="inline-block rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-700">
+          {{ tag }}
+        </span>
       </div>
       <ContentRenderer v-if="page" :dir="localeProperties?.dir ?? 'ltr'" :value="page" />
     </article>

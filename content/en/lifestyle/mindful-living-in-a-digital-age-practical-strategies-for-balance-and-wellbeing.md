@@ -12,7 +12,7 @@ image: https://img.freepik.com/free-photo/woman-meditating-home_23-2148990621.jp
 readingTime: "15"
 ---
 
-![Mindful Living](/articles/mindful-living.jpg)
+![Mindful Living](https://img.freepik.com/free-photo/woman-meditating-home_23-2148990621.jpg)
 
 In an age where digital devices mediate much of our experience—from work and education to relationships and leisure—finding balance has become one of the defining challenges of contemporary life. Technology offers unprecedented opportunities for connection, convenience, and creativity. Yet many people find themselves caught in patterns of distraction, overwhelm, and digital dependency that diminish rather than enhance wellbeing.
 

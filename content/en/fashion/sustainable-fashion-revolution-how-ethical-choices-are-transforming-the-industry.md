@@ -12,7 +12,7 @@ image: https://img.freepik.com/free-photo/woman-holding-recycling-symbol-sign_53
 readingTime: "13"
 ---
 
-![Sustainable Fashion](/articles/sustainable-fashion.jpg)
+![Sustainable Fashion](https://img.freepik.com/free-photo/woman-holding-recycling-symbol-sign_53876-148792.jpg)
 
 The fashion industry stands at a crossroads. Long criticized for its environmental impact and labor practices, the sector is now experiencing a revolutionary shift toward sustainability. This movement extends beyond marketing buzzwords—it represents a fundamental rethinking of how clothing is designed, produced, sold, and eventually recycled. For consumers, this transformation offers an opportunity to align personal style with ethical values without sacrificing quality or expression.
 

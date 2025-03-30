@@ -12,7 +12,7 @@ image: https://static.independent.co.uk/2022/04/21/21/health%20and%20beauty.jpg?
 readingTime: "12"
 ---
 
-![Sustainable Beauty Practices](/articles/sustainable-beauty.jpg)
+![Sustainable Beauty Practices](https://static.independent.co.uk/2022/04/21/21/health%20and%20beauty.jpg?width=1200&height=1200&fit=crop)
 
 The beauty industry generates over 120 billion packaging units annually, most of which end up in landfills or oceans. As environmental awareness grows, consumers are increasingly seeking ways to enjoy personal care routines without compromising planetary health. Sustainable beauty isn't just about the products we choose—it encompasses how we use them, dispose of them, and the values we support through our purchasing decisions.
 

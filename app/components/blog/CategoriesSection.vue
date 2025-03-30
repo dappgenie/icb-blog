@@ -4,8 +4,17 @@
       Categories
     </h3>
     <div class="flex flex-wrap gap-2">
-      <div v-for="category in categories" :key="category.id"
-        class="bg-white border border-gray-200 rounded-full px-3 py-1 text-xs hover:bg-gray-100 cursor-pointer">
+      <div
+        v-for="category in categories"
+        :key="category.id"
+        :class="[
+          'border rounded-full px-3 py-1 text-xs cursor-pointer transition-colors duration-200',
+          isSelected(category.id)
+            ? 'bg-primary text-white border-primary'
+            : 'bg-white border-gray-200 hover:bg-gray-100'
+        ]"
+        @click="toggleCategory(category.id)"
+      >
         {{ category.label }}
       </div>
     </div>
@@ -13,11 +22,42 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
+// Define category interface
+interface Category {
+  id: string
+  label: string
+}
+
+const props = defineProps({
   categories: {
-    type: Array,
-    required: true,
+    type: Array as () => Category[],
+    required: false,
+    default: () => [],
+  },
+  modelValue: {
+    type: Array as () => string[],
     default: () => [],
   },
 })
+
+const emit = defineEmits(['update:modelValue'])
+
+// Check if a category is selected
+const isSelected = (categoryId: string): boolean => {
+  return props.modelValue.includes(categoryId)
+}
+
+// Toggle category selection
+const toggleCategory = (categoryId: string): void => {
+  const selectedCategories = [...props.modelValue]
+  const index = selectedCategories.indexOf(categoryId)
+  
+  if (index === -1) {
+    selectedCategories.push(categoryId)
+  } else {
+    selectedCategories.splice(index, 1)
+  }
+  
+  emit('update:modelValue', selectedCategories)
+}
 </script>

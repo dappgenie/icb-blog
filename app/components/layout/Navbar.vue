@@ -16,7 +16,7 @@ const _localePath = useLocalePath()
 <template>
   <header class="relative lg:h-[104px] z-[999]">
     <!-- Mobile Header -->
-    <div class="lg:hidden block fixed t-0 l-0 flex flex-col w-full">
+    <div class="lg:hidden t-0 l-0 flex flex-col w-full">
       <div class="flex justify-between items-center h-[65px] px-[20px] mainHeader w-full z-[999]">
         <a class="ml-[13px]" href="/">
           <NuxtImg alt="" fetchpriority="high" width="100" height="150" decoding="async" data-nimg="1"
@@ -39,7 +39,7 @@ const _localePath = useLocalePath()
         </button>
       </div>
       <div class="w-full bg-secondary h-[41px]">
-        <div class="flex justify-center items-center text-[12px] bg-secondary">
+        <div class="flex justify-center items-center text-[12px] bg-secondary h-full">
           <div class="w-full max-w-[1280px] mx-[60px] h-full flex justify-center relative">
             <!-- Tabs for Cashback and ICB Card -->
             <div class="mx-auto flex flex-wrap justify-center items-center gap-x-2 md:gap-x-3 gap-y-1 h-full">

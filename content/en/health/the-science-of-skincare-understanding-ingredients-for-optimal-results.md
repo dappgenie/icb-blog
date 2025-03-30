@@ -12,7 +12,7 @@ image: https://static.vecteezy.com/system/resources/previews/021/946/805/non_2x/
 readingTime: "15"
 ---
 
-![Skincare Science](/articles/skincare-science.jpg)
+![Skincare Science](https://static.vecteezy.com/system/resources/previews/021/946/805/non_2x/beauty-and-health-illustration-with-natural-cosmetics-and-eco-products-for-problematic-skin-or-treatment-face-in-women-cartoon-hand-drawn-templates-vector.jpg)
 
 The skincare industry is flooded with products promising miraculous results, each touting breakthrough ingredients and innovative formulations. Yet behind the marketing hype lies actual science - biochemistry that explains how specific compounds interact with your skin. Understanding this science empowers consumers to make informed choices beyond trending ingredients or attractive packaging.
 

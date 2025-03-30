@@ -4,15 +4,16 @@
       <h3 class="text-sm text-primary font-semibold">
         {{ title }}
       </h3>
-      <button
+      <NuxtLink
+        :to="`/${categorySlug}/articles`"
         class="text-xs px-3 py-2 bg-white shadow-md rounded-md font-semibold flex items-center hover:bg-gray-100 cursor-pointer"
-        @click="$emit('seeAll')">
+      >
         See All
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 5l7 7-7 7" />
         </svg>
-      </button>
+      </NuxtLink>
     </div>
 
     <!-- Cards grid -->
@@ -24,9 +25,10 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import BlogCard from './BlogCard.vue'
 
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     required: true,
@@ -42,5 +44,6 @@ defineProps({
   },
 })
 
-defineEmits(['seeAll'])
+// Generate category slug from title
+const categorySlug = computed(() => props.title.toLowerCase().replace(/\s+/g, '-'))
 </script>
