@@ -8,11 +8,11 @@ tags:
   - Ingredients
   - Dermatology
   - Self-care
-image: https://static.vecteezy.com/system/resources/previews/021/946/805/non_2x/beauty-and-health-illustration-with-natural-cosmetics-and-eco-products-for-problematic-skin-or-treatment-face-in-women-cartoon-hand-drawn-templates-vector.jpg
+image: "https://static.vecteezy.com/system/resources/previews/021/946/805/non_2x/beauty-and-health-illustration-with-natural-cosmetics-and-eco-products-for-problematic-skin-or-treatment-face-in-women-cartoon-hand-drawn-templates-vector.jpg"
 readingTime: "15"
 ---
 
-![Skincare Science](https://static.vecteezy.com/system/resources/previews/021/946/805/non_2x/beauty-and-health-illustration-with-natural-cosmetics-and-eco-products-for-problematic-skin-or-treatment-face-in-women-cartoon-hand-drawn-templates-vector.jpg)
+![Skincare Science](https://example.com/image.jpg)
 
 The skincare industry is flooded with products promising miraculous results, each touting breakthrough ingredients and innovative formulations. Yet behind the marketing hype lies actual science - biochemistry that explains how specific compounds interact with your skin. Understanding this science empowers consumers to make informed choices beyond trending ingredients or attractive packaging.
 
@@ -30,7 +30,7 @@ The skin's outermost layer, the stratum corneum, consists of dead skin cells emb
 
 ## Hydration Heroes: The Foundation of Any Routine
 
-![Hydration Ingredients](/articles/hydration-skincare.jpg)
+![Hydration Ingredients](https://example.com/image.jpg)
 
 Adequate hydration is fundamental to skin health, affecting everything from appearance to function. Several key ingredients excel at attracting and retaining moisture:
 

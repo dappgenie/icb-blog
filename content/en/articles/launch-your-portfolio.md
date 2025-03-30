@@ -9,7 +9,7 @@ tags:
   - Development
   - Design
   - Productivity
-image: https://canvas.hrcd.fr/articles/launch-your-porfolio.jpg
+image: "https://example.com/articles/launch-your-porfolio.jpg"
 readingTime: "5"
 ---
 
@@ -17,7 +17,7 @@ readingTime: "5"
 
 Creating a portfolio as a development, design or tech professional is a journey punctuated by complex choices. One of the most prevalent of these dilemmas lies in the delicate balance between striving for perfection and the need to launch quickly. Explore with me the nuances of these contradictory perspectives.
 
-![preview](/articles/launch-your-porfolio.jpg)
+![preview](https://example.com/image.jpg)
 
 ### The aspiration to perfection: an unattainable ideal?
 

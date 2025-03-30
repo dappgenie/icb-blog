@@ -8,11 +8,11 @@ tags:
   - Consumer Behavior
   - Behavioral Economics
   - Marketing
-image: https://i.pinimg.com/736x/d7/78/31/d77831eb7ded43879b8932c68e29112d.jpg
+image: "https://i.pinimg.com/736x/d7/78/31/d77831eb7ded43879b8932c68e29112d.jpg"
 readingTime: "11"
 ---
 
-![Psychology of Cashback](https://i.pinimg.com/736x/d7/78/31/d77831eb7ded43879b8932c68e29112d.jpg)
+![Psychology of Cashback](https://example.com/image.jpg)
 
 Cashback and rewards programs have become ubiquitous in the modern marketplace, with virtually every major retailer offering some form of "money back" incentive. But beneath their seemingly straightforward premise—spend money, get some back—lies a sophisticated understanding of human psychology. These programs tap into fundamental aspects of our decision-making processes, creating powerful motivations that shape consumer behavior in ways we might not even recognize.
 
@@ -24,7 +24,7 @@ At its most basic level, cashback programs activate the brain's reward pathways 
 
 Research in neuroscience has revealed something surprising: our brains often release more dopamine in anticipation of a reward than when actually receiving it. This phenomenon, known as the anticipation effect, explains why cashback programs are structured to create periods of waiting and expectation.
 
-![Brain Reward System](/articles/brain-reward-system.jpg)
+![Brain Reward System](https://example.com/image.jpg)
 
 When you make a purchase with a cashback component, your brain experiences:
 
@@ -77,7 +77,7 @@ Advanced cashback programs apply this principle by:
 - Creating tiered structures where users start at level 1 (rather than level 0)
 - Showing progress visualizations that emphasize how far you've come
 
-![Progress Effect](/articles/progress-effect-visualization.jpg)
+![Progress Effect](https://example.com/image.jpg)
 
 These techniques create the perception of momentum, tapping into our natural desire to complete what we've already started.
 
@@ -178,7 +178,7 @@ The next frontier in cashback psychology involves tailoring reward structures to
 - Personalized reward timing and structure increases program effectiveness
 - Ethical considerations become increasingly important with personalization
 
-![Personalized Rewards](/articles/personalized-rewards-diagram.jpg)
+![Personalized Rewards](https://example.com/image.jpg)
 
 ## Practical Applications: Using This Knowledge
 

@@ -52,7 +52,7 @@ const _localePath = useLocalePath()
               <NuxtLink class="nav-menu" href="https://indiancashback.com">
                 Cashback
               </NuxtLink>
-              <NuxtLink class="nav-menu" to="/icb-card">
+              <NuxtLink class="nav-menu" to="https://card.indiancashback.com">
                 ICB Card
               </NuxtLink>
             </div>
@@ -105,7 +105,7 @@ const _localePath = useLocalePath()
               <NuxtLink class="nav-menu" to="https://indiancashback.com">
                 Cashback
               </NuxtLink>
-              <NuxtLink class="nav-menu" to="/icb-card">
+              <NuxtLink class="nav-menu" to="https://card.indiancashback.com">
                 ICB Card
                 <div class="bg-primary text-white text-[10px] p-1 ml-1 rounded-sm font-light">
                   Beta

@@ -8,11 +8,11 @@ tags:
   - Ethical Shopping
   - Eco-friendly
   - Style Guide
-image: https://img.freepik.com/free-photo/woman-holding-recycling-symbol-sign_53876-148792.jpg
+image: "https://img.freepik.com/free-photo/woman-holding-recycling-symbol-sign_53876-148792.jpg"
 readingTime: "13"
 ---
 
-![Sustainable Fashion](https://img.freepik.com/free-photo/woman-holding-recycling-symbol-sign_53876-148792.jpg)
+![Sustainable Fashion](https://example.com/image.jpg)
 
 The fashion industry stands at a crossroads. Long criticized for its environmental impact and labor practices, the sector is now experiencing a revolutionary shift toward sustainability. This movement extends beyond marketing buzzwords—it represents a fundamental rethinking of how clothing is designed, produced, sold, and eventually recycled. For consumers, this transformation offers an opportunity to align personal style with ethical values without sacrificing quality or expression.
 
@@ -58,7 +58,7 @@ Moving beyond the linear "take-make-waste" model:
 - **Recyclability**: Designing with end-of-life considerations
 - **Biodegradability**: Using materials that safely decompose when disposed
 
-![Circular Fashion](/articles/circular-fashion.jpg)
+![Circular Fashion](https://example.com/image.jpg)
 
 ## Innovative Materials Reshaping Fashion
 
@@ -110,7 +110,7 @@ Creating a more sustainable wardrobe doesn't require a complete overhaul or unli
 - **Clothing Swaps**: Organize exchanges with friends or community groups
 - **DIY and Upcycling**: Transform existing items into new, personalized pieces
 
-![Secondhand Shopping](/articles/secondhand-fashion.jpg)
+![Secondhand Shopping](https://example.com/image.jpg)
 
 ## Navigating Sustainability Claims
 

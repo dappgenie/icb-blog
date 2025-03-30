@@ -11,11 +11,11 @@ tags:
   - Vue
   - Raycast
   - Productivity
-image: https://canvas.hrcd.fr/articles/5-raycast-snippets.jpg
+image: "https://example.com/raycast-snippets-image.jpg"
 readingTime: "10"
 ---
 
-![preview](/articles/5-raycast-snippets.jpg)
+![preview](https://example.com/image.jpg)
 
 In the realm of web development, where efficiency is as valuable as expertise, tools that streamline and simplify our workflow are indispensable. Among these, Raycast snippets emerge as a powerful ally, especially for those working with Nuxt and Vue frameworks. But what exactly are these snippets, and how can they transform your development experience?
 
@@ -29,7 +29,7 @@ Using Raycast snippets is straightforward. Once you've created or imported a sni
 
 For instance, if you have a snippet for a standard email sign-off, you can assign a keyword like `sig1`. Typing `sig1` in an email will then automatically expand to the full signature text. This feature is especially useful in coding, where you can have snippets for common code patterns or configurations.
 
-![snippets-exemple](/articles/snippets-exemple.gif)
+![snippets-exemple](https://example.com/articles/snippets-exemple.gif)
 
 ### Component Template: `!comp`
 

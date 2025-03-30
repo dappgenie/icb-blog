@@ -8,11 +8,11 @@ tags:
   - Food as Medicine
   - Anti-inflammatory
   - Gut Health
-image: https://media.istockphoto.com/id/1141698953/photo/spa-products-for-home-skin-care.jpg?s=612x612&w=0&k=20&c=HxtIt73MwCZBY0APYngv0poZCEtyDhckTuT8SxJSxPE=
+image: "https://media.istockphoto.com/id/1141698953/photo/spa-products-for-home-skin-care.jpg?s=612x612&w=0&k=20&c=HxtIt73MwCZBY0APYngv0poZCEtyDhckTuT8SxJSxPE="
 readingTime: "16"
 ---
 
-![Holistic Nutrition](https://media.istockphoto.com/id/1141698953/photo/spa-products-for-home-skin-care.jpg?s=612x612&w=0&k=20&c=HxtIt73MwCZBY0APYngv0poZCEtyDhckTuT8SxJSxPE=)
+![Holistic Nutrition](https://example.com/image.jpg)
 
 In a world of conflicting nutrition advice and fad diets, a growing movement is returning to a foundational truth: whole foods contain powerful compounds that can prevent, alleviate, and sometimes even reverse health conditions. This approach—often called "food as medicine"—moves beyond calorie counting and macronutrient ratios to examine how specific foods influence our biochemistry, immune function, and even gene expression.
 
@@ -29,7 +29,7 @@ This paradigm shift treats food not as merely fuel but as information—molecula
 
 ## The Foundations: Key Principles of Food as Medicine
 
-![Food as Medicine Principles](/articles/food-medicine-principles.jpg)
+![Food as Medicine Principles](https://example.com/image.jpg)
 
 Several core concepts underpin the therapeutic use of food:
 
@@ -72,7 +72,7 @@ The food as medicine approach can be applied to specific health concerns with re
 
 ### Immune Resilience
 
-![Immune-Boosting Foods](/articles/immune-foods.jpg)
+![Immune-Boosting Foods](https://example.com/image.jpg)
 
 Specific nutrients and food compounds have been shown to enhance immune function:
 
@@ -118,7 +118,7 @@ Multiple clinical trials now support dietary interventions as first-line approac
 
 ## Practical Implementation: The Food as Pharmacy Approach
 
-![Food as Pharmacy](/articles/food-pharmacy.jpg)
+![Food as Pharmacy](https://example.com/image.jpg)
 
 Applying food as medicine principles doesn't require a complete dietary overhaul. Consider these practical strategies:
 

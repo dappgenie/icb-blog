@@ -8,11 +8,11 @@ tags:
   - Eco-friendly
   - Zero Waste
   - Ethical Consumption
-image: https://static.independent.co.uk/2022/04/21/21/health%20and%20beauty.jpg?width=1200&height=1200&fit=crop
+image: "https://static.independent.co.uk/2022/04/21/21/health%20and%20beauty.jpg?width=1200&height=1200&fit=crop"
 readingTime: "12"
 ---
 
-![Sustainable Beauty Practices](https://static.independent.co.uk/2022/04/21/21/health%20and%20beauty.jpg?width=1200&height=1200&fit=crop)
+![Sustainable Beauty Practices](https://example.com/image.jpg)
 
 The beauty industry generates over 120 billion packaging units annually, most of which end up in landfills or oceans. As environmental awareness grows, consumers are increasingly seeking ways to enjoy personal care routines without compromising planetary health. Sustainable beauty isn't just about the products we choose—it encompasses how we use them, dispose of them, and the values we support through our purchasing decisions.
 
@@ -30,7 +30,7 @@ The good news is that making your beauty routine more sustainable doesn't requir
 
 ## 1. Embrace Minimalism: The Core Product Philosophy
 
-![Minimalist Beauty](/articles/minimalist-beauty.jpg)
+![Minimalist Beauty](https://example.com/image.jpg)
 
 The first step toward sustainability is simply using less. The "skinimalism" movement emphasizes:
 
@@ -98,7 +98,7 @@ The "clean beauty" movement has sometimes spread misinformation, so look for bra
 
 ## 4. Support Circular Economy Initiatives: Beyond Recycling
 
-![Circular Beauty Economy](/articles/circular-beauty.jpg)
+![Circular Beauty Economy](https://example.com/image.jpg)
 
 True sustainability moves beyond the linear "take-make-dispose" model toward circular systems:
 

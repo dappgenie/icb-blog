@@ -8,11 +8,11 @@ tags:
   - International
   - FinTech
   - Consumer Trends
-image: https://t3.ftcdn.net/jpg/04/66/59/80/360_F_466598044_FH3GKSY6JIZUlPzvcvPHYcsRrGtvILrg.jpg
+image: "https://t3.ftcdn.net/jpg/04/66/59/80/360_F_466598044_FH3GKSY6JIZUlPzvcvPHYcsRrGtvILrg.jpg"
 readingTime: "13"
 ---
 
-![Global Cashback Systems](https://t3.ftcdn.net/jpg/04/66/59/80/360_F_466598044_FH3GKSY6JIZUlPzvcvPHYcsRrGtvILrg.jpg)
+![Global Cashback Systems](https://example.com/image.jpg)
 
 Cashback programs have become a fixture in consumer financial ecosystems worldwide, but their implementation varies dramatically across different countries and regions. These differences reflect not just technological capabilities but deeper cultural attitudes toward spending, saving, loyalty, and financial inclusion. Understanding these global variations provides valuable insights into both consumer behavior and the evolving landscape of financial technology.
 
@@ -34,7 +34,7 @@ The United States and Canada have developed cashback ecosystems heavily centered
 
 ### United States: The Rewards Arms Race
 
-![US Credit Card Rewards](/articles/us-credit-cards.jpg)
+![US Credit Card Rewards](https://example.com/image.jpg)
 
 The American cashback landscape features:
 

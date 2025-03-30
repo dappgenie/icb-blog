@@ -8,11 +8,11 @@ tags:
   - Machine Learning
   - Digital Transformation
   - Future Tech
-image: https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg
+image: "https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg"
 readingTime: "14"
 ---
 
-![The Future of AI](https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg)
+![The Future of AI](https://example.com/image.jpg)
 
 Artificial intelligence has transcended science fiction to become an integral part of our daily lives—often in ways we don't even recognize. From the algorithms that curate our social media feeds to the voice assistants that respond to our commands, AI technologies have quietly but dramatically transformed how we interact with digital systems. As machine learning capabilities accelerate, we stand at the threshold of a new technological era that promises to reshape our world in profound ways.
 
@@ -42,7 +42,7 @@ AI is revolutionizing healthcare through:
 
 The COVID-19 pandemic further accelerated AI adoption in healthcare, with machine learning models helping track virus spread, identify potential treatments, and optimize resource allocation during the crisis.
 
-![AI in Healthcare](/articles/ai-healthcare.jpg)
+![AI in Healthcare](https://example.com/image.jpg)
 
 ### Transportation: Reimagining Mobility
 
@@ -102,7 +102,7 @@ Many advanced AI systems, particularly deep learning models, function as "black 
 
 While AI creates new jobs and opportunities, it also automates tasks previously performed by humans. Managing this transition requires thoughtful approaches to education, training, and potentially social safety net programs to ensure the benefits of AI advancement are broadly shared.
 
-![AI Ethics](/articles/ai-ethics.jpg)
+![AI Ethics](https://example.com/image.jpg)
 
 ## The Road Ahead: Emerging Trends
 

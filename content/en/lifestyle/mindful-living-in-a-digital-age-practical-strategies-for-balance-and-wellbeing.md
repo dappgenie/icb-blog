@@ -8,11 +8,11 @@ tags:
   - Digital Wellbeing
   - Mental Health
   - Productivity
-image: https://img.freepik.com/free-photo/woman-meditating-home_23-2148990621.jpg
+image: "https://img.freepik.com/free-photo/woman-meditating-home_23-2148990621.jpg"
 readingTime: "15"
 ---
 
-![Mindful Living](https://img.freepik.com/free-photo/woman-meditating-home_23-2148990621.jpg)
+![Mindful Living](https://example.com/image.jpg)
 
 In an age where digital devices mediate much of our experience—from work and education to relationships and leisure—finding balance has become one of the defining challenges of contemporary life. Technology offers unprecedented opportunities for connection, convenience, and creativity. Yet many people find themselves caught in patterns of distraction, overwhelm, and digital dependency that diminish rather than enhance wellbeing.
 
@@ -70,7 +70,7 @@ Mindful technology engagement operates according to several fundamental principl
 - **Agency Reclamation**: Taking control of your relationship with devices
 - **Identity Separation**: Distinguishing self-worth from online validation
 
-![Digital Boundaries](/articles/digital-boundaries.jpg)
+![Digital Boundaries](https://example.com/image.jpg)
 
 ## Practical Strategies for Digital Balance
 
@@ -112,7 +112,7 @@ Simplifying your digital footprint:
 - **Content Curation**: Being selective about information sources and social connections
 - **Feature Reduction**: Using simplified versions of technology when possible
 
-![Digital Minimalism](/articles/digital-minimalism.jpg)
+![Digital Minimalism](https://example.com/image.jpg)
 
 ## Professional Effectiveness in a Digital Workplace
 
@@ -189,7 +189,7 @@ Formal and informal practices support mindful engagement:
 - **Sensory Awareness**: Engaging multiple senses as an antidote to digital abstraction
 - **Embodiment Practices**: Yoga, tai chi, or other body-centered activities
 
-![Mindfulness Practices](/articles/mindfulness-practices.jpg)
+![Mindfulness Practices](https://example.com/image.jpg)
 
 ## Family Approaches to Technology
 

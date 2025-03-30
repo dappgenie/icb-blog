@@ -5,9 +5,8 @@ import { withLeadingSlash, joinURL } from 'ufo'
 const route = useRoute()
 const { locale, localeProperties, t } = useI18n()
 
-const slug = computed(() => Array.isArray(route.params.slug) ? route.params.slug as string[] : [route.params.slug as string])
-console.log("🚀 ~ 🚀 ~ 🚀 ~ route.params:", route.params)
-const path = computed(() => withLeadingSlash(joinURL(locale.value, ...slug.value)))
+const type = computed(() => Array.isArray(route.params.type) ? route.params.type as string[] : [route.params.type as string])
+const path = computed(() => withLeadingSlash(joinURL(locale.value, ...type.value)))
 const collection = computed(() => `content_${locale.value}` as keyof Collections)
 
 const { data: page } = await useAsyncData(path.value, async () =>

@@ -9,11 +9,11 @@ description: "In the theater of content creation, many backstage whisper a
 tags:
   - Creation
   - Productivity
-image: https://canvas.hrcd.fr/articles/trap-of-perfection.jpg
+image: "https://example.com/articles/trap-of-perfection.jpg"
 readingTime: "3"
 ---
 
-![preview](/articles/trap-of-perfection.jpg)
+![preview](https://example.com/image.jpg)
 
 In the theater of content creation, there are many who, backstage, whisper a phrase tinged with doubt: "I'm not legitimate, others are so much better". This melody of insecurity, often played over and over in the minds of emerging creators, is the first act of a much larger work: the conquest of one's own legitimacy.
 
