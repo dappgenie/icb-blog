@@ -1,5 +1,5 @@
 ---
-title: Holistic Nutrition: Beyond Diets, The Food as Medicine Approach
+title: "Holistic Nutrition: Beyond Diets, The Food as Medicine Approach"
 date: 05/04/2025
 description: Discover how whole foods can address specific health concerns, boost immunity, and promote overall wellbeing through an evidence-based functional nutrition approach that treats food as a powerful tool for optimal health.
 tags:
@@ -12,7 +12,7 @@ image: https://media.istockphoto.com/id/1141698953/photo/spa-products-for-home-s
 readingTime: "16"
 ---
 
-![Holistic Nutrition](/articles/holistic-nutrition.jpg)
+![Holistic Nutrition](https://media.istockphoto.com/id/1141698953/photo/spa-products-for-home-skin-care.jpg?s=612x612&w=0&k=20&c=HxtIt73MwCZBY0APYngv0poZCEtyDhckTuT8SxJSxPE=)
 
 In a world of conflicting nutrition advice and fad diets, a growing movement is returning to a foundational truth: whole foods contain powerful compounds that can prevent, alleviate, and sometimes even reverse health conditions. This approach—often called "food as medicine"—moves beyond calorie counting and macronutrient ratios to examine how specific foods influence our biochemistry, immune function, and even gene expression.
 

@@ -1,5 +1,5 @@
 ---
-title: The Science of Skincare: Understanding Ingredients for Optimal Results
+title: "The Science of Skincare: Understanding Ingredients for Optimal Results"
 date: 31/03/2025
 description: Decode the complex world of skincare ingredients and learn how to build an effective routine based on scientific evidence. From hyaluronic acid to retinoids, this guide helps you navigate product labels and make informed choices for your skin type.
 tags:
@@ -12,7 +12,7 @@ image: https://static.vecteezy.com/system/resources/previews/021/946/805/non_2x/
 readingTime: "15"
 ---
 
-![Skincare Science](/articles/skincare-science.jpg)
+![Skincare Science](https://static.vecteezy.com/system/resources/previews/021/946/805/non_2x/beauty-and-health-illustration-with-natural-cosmetics-and-eco-products-for-problematic-skin-or-treatment-face-in-women-cartoon-hand-drawn-templates-vector.jpg)
 
 The skincare industry is flooded with products promising miraculous results, each touting breakthrough ingredients and innovative formulations. Yet behind the marketing hype lies actual science - biochemistry that explains how specific compounds interact with your skin. Understanding this science empowers consumers to make informed choices beyond trending ingredients or attractive packaging.
 

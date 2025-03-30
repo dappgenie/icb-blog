@@ -1,5 +1,5 @@
 ---
-title: Wellness Tech: Gadgets Transforming Home Health Monitoring
+title: "Wellness Tech: Gadgets Transforming Home Health Monitoring"
 date: 03/04/2025
 description: Explore the cutting-edge devices revolutionizing personal health tracking, from advanced sleep monitors to AI-powered fitness coaches. Learn how these innovations are empowering consumers with actionable health insights previously available only in clinical settings.
 tags:
@@ -12,7 +12,7 @@ image: https://img.freepik.com/free-photo/natural-cosmetics-desk_23-2148574904.j
 readingTime: "14"
 ---
 
-![Wellness Technology](/articles/wellness-tech.jpg)
+![Wellness Technology](https://img.freepik.com/free-photo/natural-cosmetics-desk_23-2148574904.jpg)
 
 The intersection of consumer technology and healthcare has created an unprecedented boom in personal health monitoring devices. What was once limited to clinical settings is now accessible in our homes and on our wrists, empowering individuals to take control of their health journeys with real-time data and actionable insights. These innovations are transforming how we understand our bodies, detect potential issues early, and optimize our wellness routines.
 
