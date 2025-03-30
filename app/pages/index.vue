@@ -18,9 +18,9 @@ const { data: technologiesList } = await useAsyncData(`technology-${locale.value
 })
 
 // Fetch cashback data
-const { data: cashbackList } = await useAsyncData(`cashback-${locale.value}`, async () => {
-  const collection = (`cashback_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Collections['cashback_en'][] | Collections['cashback_fr'][]
+const { data: investmentList } = await useAsyncData(`investment-${locale.value}`, async () => {
+  const collection = (`investment_${locale.value}`) as keyof Collections
+  return await queryCollection(collection).all() as Collections['investment_en'][] | Collections['investment_fr'][]
 }, {
   watch: [locale],
 })
@@ -33,20 +33,41 @@ const { data: healthList } = await useAsyncData(`health-${locale.value}`, async 
   watch: [locale],
 })
 
+// Fetch fashion data
+const { data: fashionList } = await useAsyncData(`fashion-${locale.value}`, async () => {
+  const collection = (`fashion_${locale.value}`) as keyof Collections
+  return await queryCollection(collection).all() as Collections['fashion_en'][] | Collections['fashion_fr'][]
+}, {
+  watch: [locale],
+})
+
+// Fetch lifestyle data
+const { data: lifestyleList } = await useAsyncData(`lifestyle-${locale.value}`, async () => {
+  const collection = (`lifestyle_${locale.value}`) as keyof Collections
+  return await queryCollection(collection).all() as Collections['lifestyle_en'][] | Collections['lifestyle_fr'][]
+}, {
+  watch: [locale],
+})
+
 // Computed properties for visible items
 const visibleTechnologies = computed(() => {
-  console.log('technologiesList.value', technologiesList.value)
   return technologiesList.value ? [...technologiesList.value] : []
 })
 
-const visibleCashback = computed(() => {
-  console.log('cashbackList.value', cashbackList.value)
-  return cashbackList.value ? [...cashbackList.value] : []
+const visibleInvestment = computed(() => {
+  return investmentList.value ? [...investmentList.value] : []
 })
 
 const visibleHealth = computed(() => {
-  console.log('healthList.value', healthList.value)
   return healthList.value ? [...healthList.value] : []
+})
+
+const visibleFashion = computed(() => {
+  return fashionList.value ? [...fashionList.value] : []
+})
+
+const visibleLifestyle = computed(() => {
+  return lifestyleList.value ? [...lifestyleList.value] : []
 })
 
 // Search functionality
@@ -74,22 +95,13 @@ const categories = ref([
   { id: 'furniture', label: 'Furniture' },
   { id: 'food', label: 'Food and Beverages' },
 ])
-
-// Featured blog post data
-const featuredPost = ref({
-  title: 'How to get cash back in an effective Way?',
-  image: '/assets/blog-banner.webp',
-  category: 'Cashback',
-  author: 'Delvin Joseph',
-})
-
 // Handle see all clicks
 const handleSeeAll = (section: string) => {
   console.log(`See all clicked for ${section}`)
   // Implement navigation to section page
 }
 
-if (!technologiesList.value && !cashbackList.value)
+if (!technologiesList.value && !investmentList.value)
   throw createError({ statusCode: 404, statusMessage: 'Page not found' })
 </script>
 
@@ -104,21 +116,29 @@ if (!technologiesList.value && !cashbackList.value)
         <!-- Main content area -->
         <div class="flex-1 px-4 mt-6">
           <!-- Featured blog post -->
-          <FeaturedBlogPost :post="featuredPost" />
+          <FeaturedBlogPost :post="visibleInvestment?.[0] ?? {}" />
 
           <!-- Categories -->
           <CategoriesSection :categories="categories" />
           <!-- Investment section -->
-          <BlogSection title="Investment" :articles="visibleCashback" :max-items="5"
+          <BlogSection v-if="visibleInvestment?.length" title="Investment" :articles="visibleInvestment" :max-items="5"
             @see-all="handleSeeAll('investment')" />
 
           <!-- Technology section -->
-          <BlogSection title="Technology" :articles="visibleTechnologies" :max-items="5"
-            @see-all="handleSeeAll('technology')" />
+          <BlogSection v-if="visibleTechnologies?.length" title="Technology" :articles="visibleTechnologies"
+            :max-items="5" @see-all="handleSeeAll('technology')" />
 
           <!-- Health and Wellness section -->
-          <BlogSection title="Health and Wellness" :articles="visibleHealth" :max-items="5"
+          <BlogSection v-if="visibleHealth?.length" title="Health and Wellness" :articles="visibleHealth" :max-items="5"
             @see-all="handleSeeAll('health')" />
+
+          <!-- Fashion section -->
+          <BlogSection v-if="visibleFashion?.length" title="Fashion" :articles="visibleFashion" :max-items="5"
+            @see-all="handleSeeAll('fashion')" />
+
+          <!-- Lifestyle section -->
+          <BlogSection v-if="visibleLifestyle?.length" title="Lifestyle" :articles="visibleLifestyle" :max-items="5"
+            @see-all="handleSeeAll('lifestyle')" />
         </div>
       </div>
     </main>

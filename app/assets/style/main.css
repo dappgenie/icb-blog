@@ -162,5 +162,5 @@ body,
 }
 
 .nav-menu {
-  @apply flex justify-between items-center px-4 py-2 border-0 text-xs hover:border-b-2 font-medium text-black hover:font-semibold hover:text-primary hover:border-primary cursor-pointer;
+  @apply flex justify-between items-center px-2 md:px-4 py-2 border-0 text-xs hover:border-b-2 font-semibold text-black hover:font-bold hover:text-primary hover:border-primary cursor-pointer;
 }
