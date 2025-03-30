@@ -124,6 +124,26 @@ export const collections = {
       schema: commonArticleSchema,
     }),
   ),
+  health_en: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'en/health/*.md',
+        prefix: '/en/health',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
+  health_fr: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'fr/health/*.md',
+        prefix: '/fr/health',
+      },
+      schema: commonArticleSchema,
+    }),
+  ),
   projects_en: defineCollection(
     asSeoCollection({
       type: 'data',
