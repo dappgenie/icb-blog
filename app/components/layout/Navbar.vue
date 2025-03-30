@@ -18,12 +18,12 @@ const _localePath = useLocalePath()
     <!-- Mobile Header -->
     <div class="lg:hidden t-0 l-0 flex flex-col w-full">
       <div class="flex justify-between items-center h-[65px] px-[20px] mainHeader w-full z-[999]">
-        <a class="ml-[13px]" href="/">
+        <NuxtLink class="ml-[13px]" to="/">
           <NuxtImg alt="" fetchpriority="high" width="100" height="150" decoding="async" data-nimg="1"
             class="h-[100px] w-[75px] mb-[15px]" style="color:transparent" src="/assets/icb-beta-mobile-logo.svg" />
-        </a>
+        </NuxtLink>
 
-        <button
+        <NuxtLink target="_blank" to="https://indiancashback.com/"
           class="flex items-center justify-center border border-white px-3 py-2 rounded-md text-white text-sm font-semibold ml-[30px] cursor-pointer hover:bg-white/10 hover:scale-105 transition-all duration-300">
           <svg fill="none" viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg" class="text-white w-[19px] mr-[10px]">
             <path
@@ -36,7 +36,7 @@ const _localePath = useLocalePath()
               stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
           </svg>
           Launch App
-        </button>
+        </NuxtLink>
       </div>
       <div class="w-full bg-secondary h-[41px]">
         <div class="flex justify-center items-center text-[12px] bg-secondary h-full">
@@ -66,13 +66,14 @@ const _localePath = useLocalePath()
       <!-- Upper section with logo and login button -->
       <div class="w-full bg-primary">
         <div class="h-[63px] w-full flex justify-between items-center container mx-auto">
-          <div class="flex gap-[8px] items-center cursor-pointer hover:scale-105 transition-all duration-300">
+          <NuxtLink to="/"
+            class="flex gap-[8px] items-center cursor-pointer hover:scale-105 transition-all duration-300">
             <NuxtImg alt="" fetchpriority="high" width="260" height="140" decoding="async" data-nimg="1"
               class="h-[110px] w-[240px]" style="color:transparent" src="/assets/icb-beta-logo.svg" />
-          </div>
+          </NuxtLink>
 
           <div class="flex items-center">
-            <button
+            <NuxtLink target="_blank" to="https://indiancashback.com/"
               class="flex items-center justify-center border border-white px-4 py-3 rounded-md text-white text-sm font-semibold ml-[30px] cursor-pointer hover:bg-white/10 hover:scale-105 transition-all duration-300">
               <svg fill="none" viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg"
                 class="text-white w-[19px] mr-[10px]">
@@ -86,7 +87,7 @@ const _localePath = useLocalePath()
                   stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
               </svg>
               Launch App
-            </button>
+            </NuxtLink>
           </div>
         </div>
       </div>
