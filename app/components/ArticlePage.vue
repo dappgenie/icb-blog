@@ -136,7 +136,7 @@ if (hasImage.value) {
         {{ collectionType.label }}
       </span>
     </NuxtLinkLocale>
-    <article class="writing mx-auto px-4 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
+    <article class="writing mx-auto px-4 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl pb-20 lg:pb-28">
       <h1 v-if="hasTitle">
         {{ title }}
       </h1>
