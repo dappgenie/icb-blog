@@ -160,7 +160,7 @@ if (hasImage.value) {
           <UIcon name="lucide:link" class="size-4 mt-[6px]" />
         </button>
       </div>
-      <div class="mb-8">
+      <div class="mb-8 space-x-1">
         <span v-for="tag in page.tags" :key="tag"
           class="inline-block rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-700">
           {{ tag }}
