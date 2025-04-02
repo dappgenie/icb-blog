@@ -12,10 +12,7 @@
           {{ post.title || 'How to get cash back in an effective Way?' }}
         </h2>
         <div class="flex items-center space-x-2">
-          <img
-            :src="post.authorImage || 'https://e7.pngegg.com/pngimages/178/419/png-clipart-man-illustration-computer-icons-avatar-login-user-avatar-child-web-design-thumbnail.png'"
-            :alt="post.author || 'Author'" class="w-8 h-8 rounded-full">
-          <span class="text-sm">{{ post.author || 'Delvin Joseph' }}</span>
+          <span class="text-sm">{{ post.date || new Date().toLocaleDateString() }}</span>
         </div>
       </div>
     </div>
@@ -31,8 +28,7 @@ defineProps({
       title: 'How to get cash back in an effective Way?',
       image: '/assets/blog-banner.webp',
       category: 'Cashback',
-      author: 'Delvin Joseph',
-      authorImage: '',
+      date: new Date().toLocaleDateString(),
     }),
   },
 })
