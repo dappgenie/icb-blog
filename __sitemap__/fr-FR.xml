@@ -9,9 +9,6 @@
             <image:loc>https://t4.ftcdn.net/jpg/04/59/48/15/360_F_459481536_QyHEGtoIASEBK49fdg5ZhuOEfOGnOYaS.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://e7.pngegg.com/pngimages/178/419/png-clipart-man-illustration-computer-icons-avatar-login-user-avatar-child-web-design-thumbnail.png</image:loc>
-        </image:image>
-        <image:image>
             <image:loc>https://img.freepik.com/premium-vector/cash-back-service-financial-payment-label-vector_3482-6295.jpg?semt=ais_hybrid</image:loc>
         </image:image>
         <image:image>
@@ -90,13 +87,9 @@
             <image:loc>https://img.freepik.com/free-photo/woman-holding-recycling-symbol-sign_53876-148792.jpg</image:loc>
         </image:image>
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/fashion/articles" hreflang="fr-FR" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/fashion/articles" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/fashion/articles" hreflang="en-US" />
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/fashion/sustainable-fashion-revolution-how-ethical-choices-are-transforming-the-industry</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/fashion/sustainable-fashion-revolution-how-ethical-choices-are-transforming-the-industry" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/fashion/sustainable-fashion-revolution-how-ethical-choices-are-transforming-the-industry" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/fashion/sustainable-fashion-revolution-how-ethical-choices-are-transforming-the-industry" hreflang="fr-FR" />
     </url>
     <url>
@@ -114,31 +107,21 @@
             <image:loc>https://img.freepik.com/free-photo/natural-cosmetics-desk_23-2148574904.jpg</image:loc>
         </image:image>
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/health/articles" hreflang="fr-FR" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/articles" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/articles" hreflang="en-US" />
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/health/five-sustainable-beauty-practices-for-eco-conscious-consumers</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/five-sustainable-beauty-practices-for-eco-conscious-consumers" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/five-sustainable-beauty-practices-for-eco-conscious-consumers" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/health/five-sustainable-beauty-practices-for-eco-conscious-consumers" hreflang="fr-FR" />
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/health/holistic-nutrition-beyond-diets-food-as-medicine-approach</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/holistic-nutrition-beyond-diets-food-as-medicine-approach" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/holistic-nutrition-beyond-diets-food-as-medicine-approach" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/health/holistic-nutrition-beyond-diets-food-as-medicine-approach" hreflang="fr-FR" />
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/health/the-science-of-skincare-understanding-ingredients-for-optimal-results</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/the-science-of-skincare-understanding-ingredients-for-optimal-results" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/the-science-of-skincare-understanding-ingredients-for-optimal-results" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/health/the-science-of-skincare-understanding-ingredients-for-optimal-results" hreflang="fr-FR" />
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/health/wellness-tech-gadgets-transforming-home-health-monitoring</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/wellness-tech-gadgets-transforming-home-health-monitoring" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/health/wellness-tech-gadgets-transforming-home-health-monitoring" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/health/wellness-tech-gadgets-transforming-home-health-monitoring" hreflang="fr-FR" />
     </url>
     <url>
@@ -165,20 +148,14 @@
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/investment/mastering-cashback-the-ultimate-guide-to-maximizing-your-returns</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/mastering-cashback-the-ultimate-guide-to-maximizing-your-returns" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/mastering-cashback-the-ultimate-guide-to-maximizing-your-returns" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/investment/mastering-cashback-the-ultimate-guide-to-maximizing-your-returns" hreflang="fr-FR" />
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/investment/the-global-perspective-how-cashback-programs-differ-around-the-world</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/the-global-perspective-how-cashback-programs-differ-around-the-world" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/the-global-perspective-how-cashback-programs-differ-around-the-world" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/investment/the-global-perspective-how-cashback-programs-differ-around-the-world" hreflang="fr-FR" />
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/investment/the-psychology-of-cashback-why-rewards-programs-are-so-effective</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/the-psychology-of-cashback-why-rewards-programs-are-so-effective" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/the-psychology-of-cashback-why-rewards-programs-are-so-effective" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/investment/the-psychology-of-cashback-why-rewards-programs-are-so-effective" hreflang="fr-FR" />
     </url>
     <url>
@@ -187,13 +164,9 @@
             <image:loc>https://img.freepik.com/free-photo/woman-meditating-home_23-2148990621.jpg</image:loc>
         </image:image>
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/lifestyle/articles" hreflang="fr-FR" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/lifestyle/articles" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/lifestyle/articles" hreflang="en-US" />
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/lifestyle/mindful-living-in-a-digital-age-practical-strategies-for-balance-and-wellbeing</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/lifestyle/mindful-living-in-a-digital-age-practical-strategies-for-balance-and-wellbeing" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/lifestyle/mindful-living-in-a-digital-age-practical-strategies-for-balance-and-wellbeing" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/lifestyle/mindful-living-in-a-digital-age-practical-strategies-for-balance-and-wellbeing" hreflang="fr-FR" />
     </url>
     <url>
@@ -202,14 +175,10 @@
             <image:loc>https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg</image:loc>
         </image:image>
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/technology/articles" hreflang="fr-FR" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/technology/articles" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/technology/articles" hreflang="en-US" />
     </url>
     <url>
         <loc>https://canvas.hrcd.fr/fr/technology/the-future-of-ai-how-machine-learning-is-reshaping-our-world</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/technology/the-future-of-ai-how-machine-learning-is-reshaping-our-world" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/technology/the-future-of-ai-how-machine-learning-is-reshaping-our-world" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/technology/the-future-of-ai-how-machine-learning-is-reshaping-our-world" hreflang="fr-FR" />
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.9 at 2025-03-31T05:48:55.979Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.9 at 2025-04-02T09:11:11.286Z -->
