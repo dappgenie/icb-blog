@@ -65,7 +65,7 @@ const _localePath = useLocalePath()
     <div class="desktopHeader hidden lg:block fixed top-0 w-full h-[104px]">
       <!-- Upper section with logo and login button -->
       <div class="w-full bg-primary">
-        <div class="h-[63px] w-full flex justify-between items-center container mx-auto">
+        <div class="h-[63px] w-full flex justify-between items-center container mx-auto px-0 xl:px-4">
           <NuxtLink to="/"
             class="flex gap-[8px] items-center cursor-pointer hover:scale-105 transition-all duration-300">
             <NuxtImg alt="" fetchpriority="high" width="260" height="140" decoding="async" data-nimg="1"
