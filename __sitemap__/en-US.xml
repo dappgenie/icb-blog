@@ -12,7 +12,19 @@
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en" hreflang="en-US" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr" hreflang="fr-FR" />
         <image:image>
+            <image:loc>https://blog.indiancashback.com/sale.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://blog.indiancashback.com/articles/swiggy.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://blog.indiancashback.com/articles/sale1.png</image:loc>
+        </image:image>
+        <image:image>
             <image:loc>https://www.indiancashback.com/img/og-image.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.indiancashback.com/img/og-image.jpg</image:loc>
         </image:image>
     </url>
     <url>
@@ -153,18 +165,97 @@
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/articles/not-an-impostor" hreflang="fr-FR" />
     </url>
     <url>
+        <loc>https://canvas.hrcd.fr/en/investment/1_how-to-get-cashback-on-every-purchase-a-beginners-guide</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/1_how-to-get-cashback-on-every-purchase-a-beginners-guide" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/1_how-to-get-cashback-on-every-purchase-a-beginners-guide" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/2_welcome-to-indiancashback-blog</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/2_welcome-to-indiancashback-blog" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/2_welcome-to-indiancashback-blog" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/13_introducing_swiggy_a_new_destination_for_online_food_junkies</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/13_introducing_swiggy_a_new_destination_for_online_food_junkies" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/13_introducing_swiggy_a_new_destination_for_online_food_junkies" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/19_never-before-flipkart-offer-get-5-percent-cashback</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/19_never-before-flipkart-offer-get-5-percent-cashback" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/19_never-before-flipkart-offer-get-5-percent-cashback" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/30_indiancashback_diwali_offer_shop_for_percente2percent82percentb9300_or_more_at</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/30_indiancashback_diwali_offer_shop_for_percente2percent82percentb9300_or_more_at" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/30_indiancashback_diwali_offer_shop_for_percente2percent82percentb9300_or_more_at" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/43_it-is-back-with-a-bang-flipkart-bigbillion-days-are-back</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/43_it-is-back-with-a-bang-flipkart-bigbillion-days-are-back" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/43_it-is-back-with-a-bang-flipkart-bigbillion-days-are-back" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/49_shopclues-is-back-with-sunday-flea-market</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/49_shopclues-is-back-with-sunday-flea-market" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/49_shopclues-is-back-with-sunday-flea-market" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/62_best-offers-on-winter-clothing-india</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/62_best-offers-on-winter-clothing-india" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/62_best-offers-on-winter-clothing-india" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/70_launching-zenfone-max-never-run-out-of-battery</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/70_launching-zenfone-max-never-run-out-of-battery" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/70_launching-zenfone-max-never-run-out-of-battery" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/81_amazon-exclusive-lenovo-vibe-k4-note-just-rs-11998</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/81_amazon-exclusive-lenovo-vibe-k4-note-just-rs-11998" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/81_amazon-exclusive-lenovo-vibe-k4-note-just-rs-11998" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/87_indiancashback-rs-30-cashback-train-ticket-booking</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/87_indiancashback-rs-30-cashback-train-ticket-booking" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/87_indiancashback-rs-30-cashback-train-ticket-booking" hreflang="en-US" />
+    </url>
+    <url>
+        <loc>https://canvas.hrcd.fr/en/investment/102_bsnl_bill_payment_5percent_instant_fc_cashback_on_landlinebroadband</loc>
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/102_bsnl_bill_payment_5percent_instant_fc_cashback_on_landlinebroadband" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/102_bsnl_bill_payment_5percent_instant_fc_cashback_on_landlinebroadband" hreflang="en-US" />
+    </url>
+    <url>
         <loc>https://canvas.hrcd.fr/en/investment/articles</loc>
+        <image:image>
+            <image:loc>https://blog.indiancashback.com/sale.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://blog.indiancashback.com/articles/swiggy.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://blog.indiancashback.com/articles/sale1.png</image:loc>
+        </image:image>
         <image:image>
             <image:loc>https://www.indiancashback.com/img/og-image.png</image:loc>
         </image:image>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/investment/articles" hreflang="fr-FR" />
+        <image:image>
+            <image:loc>https://www.indiancashback.com/img/og-image.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://blog.indiancashback.com/articles/sale2.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://blog.indiancashback.com/articles/flipkart.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://blog.indiancashback.com/articles/sale3.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://blog.indiancashback.com/articles/sale4.png</image:loc>
+        </image:image>
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/articles" hreflang="x-default" />
         <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/articles" hreflang="en-US" />
-    </url>
-    <url>
-        <loc>https://canvas.hrcd.fr/en/investment/how-to-get-cashback-on-every-purchase-a-beginners-guide</loc>
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/how-to-get-cashback-on-every-purchase-a-beginners-guide" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/en/investment/how-to-get-cashback-on-every-purchase-a-beginners-guide" hreflang="en-US" />
+        <xhtml:link rel="alternate" href="https://canvas.hrcd.fr/fr/investment/articles" hreflang="fr-FR" />
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.9 at 2025-04-03T12:13:21.366Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.9 at 2025-04-17T06:07:39.825Z -->
