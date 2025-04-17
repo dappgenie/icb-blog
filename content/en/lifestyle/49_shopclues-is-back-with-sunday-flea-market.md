@@ -1,15 +1,18 @@
 ---
-title: "Shopclues is back again with their amazing Sunday flea market"
-date: 2015-12-12
-description: "Shopclues brings back its popular Sunday flea market with over 1800 products starting at just Rs. 48. Shop for home apparels, appliances, mobile phones, and more at unbelievably low prices, plus earn up to 5.7% cashback."
+title: Shopclues is back again with their amazing Sunday flea market
+date: 12 Dec 2015
+description: >-
+  Shopclues brings back its popular Sunday flea market with over 1800 products
+  starting at just Rs. 48. Shop for home apparels, appliances, mobile phones,
+  and more at unbelievably low prices, plus earn up to 5.7% cashback.
 tags:
   - investment
   - lifestyle
   - home_appliances
   - electronics
   - mobile
-image: "https://blog.indiancashback.com/articles/sale3.png"
-readingTime: "3"
+image: 'https://blog.indiancashback.com/articles/sale3.png'
+readingTime: '3'
 ---
 
 ![Shopclues Sunday Flea Market](https://blog.indiancashback.com/articles/sale3.png)

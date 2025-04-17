@@ -1,13 +1,16 @@
 ---
-title: "Shop for ₹200 or more at Amazon.in & get ₹75 Amazon Gift Card"
-date: 2015-10-03
-description: "Get an assured ₹75 Amazon Gift Card when you shop for ₹200 or more at Amazon.in with a new account. Plus, earn up to 11% additional cashback through IndianCashback.com."
+title: Shop for ₹200 or more at Amazon.in & get ₹75 Amazon Gift Card
+date: 03 Oct 2015
+description: >-
+  Get an assured ₹75 Amazon Gift Card when you shop for ₹200 or more at
+  Amazon.in with a new account. Plus, earn up to 11% additional cashback through
+  IndianCashback.com.
 tags:
   - investment
   - technology
   - lifestyle
-image: "https://blog.indiancashback.com/articles/sale2.png"
-readingTime: "2"
+image: 'https://blog.indiancashback.com/articles/sale2.png'
+readingTime: '2'
 ---
 
 ![Amazon Gift Card Offer](https://blog.indiancashback.com/articles/sale2.png)

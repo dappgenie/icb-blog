@@ -1,16 +1,19 @@
 ---
-title: "Welcome to IndianCashback: Your Guide to Smarter Online Shopping"
-date: 2015-09-05
-description: "Discover how IndianCashback helps you save money while shopping online. Get exclusive deals, cashback offers, and expert tips to maximize your savings across 350+ Indian retailers."
+title: 'Welcome to IndianCashback: Your Guide to Smarter Online Shopping'
+date: 05 Sep 2015
+description: >-
+  Discover how IndianCashback helps you save money while shopping online. Get
+  exclusive deals, cashback offers, and expert tips to maximize your savings
+  across 350+ Indian retailers.
 tags:
   - investment
   - lifestyle
   - technology
-image: "https://www.indiancashback.com/articles/welcome.png"
-readingTime: "4"
+image: 'https://blog.indiancashback.com/articles/welcome.png'
+readingTime: '4'
 ---
 
-![Welcome to IndianCashback](https://www.indiancashback.com/articles/welcome.png)
+![Welcome to IndianCashback](https://blog.indiancashback.com/articles/welcome.png)
 
 Welcome to the IndianCashback Blog – your ultimate resource for smart online shopping and maximum savings! We're excited to launch this platform where we'll share the latest deals, money-saving strategies, and insider tips to help you make the most of your online shopping experience.
 

@@ -1,13 +1,16 @@
 ---
-title: "Get best offers for your winter clothing"
-date: 2015-12-20
-description: "This winter season, save up to 23% on winter clothing with exclusive offers from top retailers like Flipkart, Amazon, Snapdeal, Jabong, eBay, and Shopclues, plus earn additional cashback through IndianCashback.com."
+title: Get best offers for your winter clothing
+date: 20 Dec 2015
+description: >-
+  This winter season, save up to 23% on winter clothing with exclusive offers
+  from top retailers like Flipkart, Amazon, Snapdeal, Jabong, eBay, and
+  Shopclues, plus earn additional cashback through IndianCashback.com.
 tags:
   - investment
   - fashion
   - lifestyle
-image: "https://blog.indiancashback.com/articles/sale4.png"
-readingTime: "3"
+image: 'https://blog.indiancashback.com/articles/sale4.png'
+readingTime: '3'
 ---
 
 ![Winter Clothing Offers](https://blog.indiancashback.com/articles/sale4.png)

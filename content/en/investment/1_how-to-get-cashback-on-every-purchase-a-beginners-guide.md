@@ -1,13 +1,16 @@
 ---
-title: "How to Get Cashback on Every Purchase – A Beginner's Guide"
-date: 30/03/2025
-description: The world of cashback has evolved dramatically with innovative mobile applications. Discover the five cutting-edge cashback apps that are redefining how consumers save money and earn rewards on everyday purchases.
+title: How to Get Cashback on Every Purchase – A Beginner's Guide
+date: 30 Mar 2025
+description: >-
+  The world of cashback has evolved dramatically with innovative mobile
+  applications. Discover the five cutting-edge cashback apps that are redefining
+  how consumers save money and earn rewards on everyday purchases.
 tags:
   - investment
   - technology
   - lifestyle
-image: "https://www.indiancashback.com/img/og-image.png"
-readingTime: "3"
+image: 'https://www.indiancashback.com/img/og-image.png'
+readingTime: '3'
 ---
 
 ![Cashback Apps Revolution](https://www.indiancashback.com/img/og-image.png)

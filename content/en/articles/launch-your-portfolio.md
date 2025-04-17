@@ -1,16 +1,17 @@
 ---
 title: Finally launch your portfolio
-date: 20/10/2023
-description: Aiming for perfectionism is a very good state of mind. On the other
-  hand, working until perfectionism is 100% can also be bad. Here are some tips
-  to help you get your portfolio off the ground.
+date: 20 Oct 2023
+description: >-
+  Aiming for perfectionism is a very good state of mind. On the other hand,
+  working until perfectionism is 100% can also be bad. Here are some tips to
+  help you get your portfolio off the ground.
 tags:
   - Portfolio
   - Development
   - Design
   - Productivity
-image: "https://example.com/articles/launch-your-porfolio.jpg"
-readingTime: "5"
+image: 'https://example.com/articles/launch-your-porfolio.jpg'
+readingTime: '5'
 ---
 
 ## Introduction

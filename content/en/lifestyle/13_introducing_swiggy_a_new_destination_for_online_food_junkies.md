@@ -1,14 +1,17 @@
 ---
-title: "Introducing Swiggy - A new destination for online food junkies"
-date: 2015-09-15
-description: "Swiggy is a new player in the highly competitive market of online food ordering and delivery network, offering a complete food ordering and delivery solution from the best neighborhood restaurants to urban foodies."
+title: Introducing Swiggy - A new destination for online food junkies
+date: 15 Sep 2015
+description: >-
+  Swiggy is a new player in the highly competitive market of online food
+  ordering and delivery network, offering a complete food ordering and delivery
+  solution from the best neighborhood restaurants to urban foodies.
 tags:
   - food
   - technology
   - lifestyle
   - investment
-image: "https://blog.indiancashback.com/articles/swiggy.png"
-readingTime: "2"
+image: 'https://blog.indiancashback.com/articles/swiggy.png'
+readingTime: '2'
 ---
 
 ![Swiggy Food Delivery](https://blog.indiancashback.com/articles/swiggy.png)

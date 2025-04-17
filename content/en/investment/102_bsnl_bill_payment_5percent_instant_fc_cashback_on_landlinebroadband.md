@@ -1,13 +1,18 @@
 ---
-title: "BSNL BILL PAYMENT: 5% instant FC cashback on Landline/Broadband Bill payment + extra 2% cashback"
-date: 2016-01-14
-description: "India's National Telecom back bone Bharat Sanchar Nigam Ltd (BSNL) Bill payments are now more rewarding with our simple cashback offer. Whenever you are planning to do BSNL bill payment, think about our cashback offer."
+title: >-
+  BSNL BILL PAYMENT: 5% instant FC cashback on Landline/Broadband Bill payment +
+  extra 2% cashback
+date: 14 Jan 2016
+description: >-
+  India's National Telecom back bone Bharat Sanchar Nigam Ltd (BSNL) Bill
+  payments are now more rewarding with our simple cashback offer. Whenever you
+  are planning to do BSNL bill payment, think about our cashback offer.
 tags:
   - investment
   - technology
   - lifestyle
-image: "https://blog.indiancashback.com/articles/sale.png"
-readingTime: "3"
+image: 'https://blog.indiancashback.com/articles/sale.png'
+readingTime: '3'
 ---
 
 ![BSNL Bill Payment Cashback](https://blog.indiancashback.com/articles/sale.png)

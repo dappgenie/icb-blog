@@ -111,7 +111,8 @@ const matchesSelectedCategories = (article: Article) => {
 const filterArticles = (articles: Article[]) => {
   if (!articles) return []
 
-  return articles.filter((article) => {
+  // First filter the articles
+  const filtered = articles.filter((article) => {
     // Text search filter
     const matchesSearch = !searchQuery.value.trim()
       || article.title.toLowerCase().includes(searchQuery.value.toLowerCase())
@@ -122,6 +123,37 @@ const filterArticles = (articles: Article[]) => {
 
     return matchesSearch && matchesCategories
   })
+
+  // Then sort by date (newest first)
+  return filtered.sort((a, b) => {
+    // Parse dates - handle different date formats
+    const dateA = parseArticleDate(a.date)
+    const dateB = parseArticleDate(b.date)
+
+    // Sort in descending order (newest first)
+    return dateB.getTime() - dateA.getTime()
+  })
+}
+
+// Helper function to parse article dates in different formats
+const parseArticleDate = (dateString?: string): Date => {
+  if (!dateString) return new Date(0) // Default to epoch if no date
+
+  // Try different date formats
+  // Format: DD/MM/YYYY
+  if (/^\d{2}\/\d{2}\/\d{4}$/.test(dateString)) {
+    const [day, month, year] = dateString.split('/').map(Number)
+    return new Date(year, month - 1, day)
+  }
+
+  // Format: YYYY-MM-DD
+  if (/^\d{4}-\d{2}-\d{2}$/.test(dateString)) {
+    return new Date(dateString)
+  }
+
+  // Try standard date parsing as fallback
+  const parsedDate = new Date(dateString)
+  return Number.isNaN(parsedDate.getTime()) ? new Date(0) : parsedDate
 }
 
 // Computed properties for visible items with search and category filtering
@@ -148,7 +180,6 @@ const visibleLifestyle = computed(() => {
 const visibleTravel = computed(() => {
   return travelList.value ? filterArticles([...travelList.value]) : []
 })
-
 
 // Get all articles across categories for search results
 const allArticles = computed(() => {

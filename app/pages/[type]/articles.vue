@@ -33,6 +33,7 @@ const contentCollection = computed(() => {
     'health-and-wellness': 'health',
     'fashion': 'fashion',
     'lifestyle': 'lifestyle',
+    'travel': 'travel',
     'writings': 'articles',
   }
 
@@ -57,10 +58,41 @@ interface Article {
 
 // Fetch articles for the current category
 const { data: articles } = await useAsyncData(`${category.value}-articles-${locale.value}`, async () => {
-  return await queryCollection(contentCollection.value).all() as Article[]
+  const fetchedArticles = await queryCollection(contentCollection.value).all() as Article[]
+
+  // Sort articles by date (newest first)
+  return fetchedArticles.sort((a, b) => {
+    // Parse dates - handle different date formats
+    const dateA = parseArticleDate(a.date)
+    const dateB = parseArticleDate(b.date)
+
+    // Sort in descending order (newest first)
+    return dateB.getTime() - dateA.getTime()
+  })
 }, {
   watch: [locale, category],
 })
+
+// Helper function to parse article dates in different formats
+const parseArticleDate = (dateString?: string): Date => {
+  if (!dateString) return new Date(0) // Default to epoch if no date
+
+  // Try different date formats
+  // Format: DD/MM/YYYY
+  if (/^\d{2}\/\d{2}\/\d{4}$/.test(dateString)) {
+    const [day, month, year] = dateString.split('/').map(Number)
+    return new Date(year, month - 1, day)
+  }
+
+  // Format: YYYY-MM-DD
+  if (/^\d{4}-\d{2}-\d{2}$/.test(dateString)) {
+    return new Date(dateString)
+  }
+
+  // Try standard date parsing as fallback
+  const parsedDate = new Date(dateString)
+  return Number.isNaN(parsedDate.getTime()) ? new Date(0) : parsedDate
+}
 
 // Search functionality
 const searchQuery = ref('')
@@ -127,6 +159,11 @@ const categoryTheme = computed(() => {
       image: '/assets/blog-banner.webp',
       color: 'from-orange-900/80',
       icon: '🏡',
+    },
+    'travel': {
+      image: '/assets/blog-banner.webp',
+      color: 'from-yellow-900/80',
+      icon: '✈️',
     },
     'writings': {
       image: '/assets/blog-banner.webp',

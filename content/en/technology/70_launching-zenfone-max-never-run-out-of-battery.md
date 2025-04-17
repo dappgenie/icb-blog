@@ -1,14 +1,17 @@
 ---
-title: "Launching Zenfone Max - Never run out of battery"
-date: 2016-01-05
-description: "Asus launches the Zenfone Max with an incredible 5000mAh battery that can also work as a power bank. Available for just Rs.9,999 on Flipkart from January 14, this smartphone offers impressive specs and up to 38 days of standby time."
+title: Launching Zenfone Max - Never run out of battery
+date: 05 Jan 2016
+description: >-
+  Asus launches the Zenfone Max with an incredible 5000mAh battery that can also
+  work as a power bank. Available for just Rs.9,999 on Flipkart from January 14,
+  this smartphone offers impressive specs and up to 38 days of standby time.
 tags:
   - investment
   - technology
   - electronics
   - mobile
-image: "https://blog.indiancashback.com/articles/sale3.png"
-readingTime: "4"
+image: 'https://blog.indiancashback.com/articles/sale3.png'
+readingTime: '4'
 ---
 
 ![Asus Zenfone Max Launch](https://blog.indiancashback.com/articles/sale3.png)

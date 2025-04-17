@@ -1,14 +1,17 @@
 ---
-title: "It is back with a bang: Flipkart BigBillion Days are back"
-date: 2015-10-08
-description: "Flipkart's BigBillion Days return with 5 days of massive discounts from October 13-17. This app-only sale promises better technical support, more products, and faster shipping than last year's event."
+title: 'It is back with a bang: Flipkart BigBillion Days are back'
+date: 08 Oct 2015
+description: >-
+  Flipkart's BigBillion Days return with 5 days of massive discounts from
+  October 13-17. This app-only sale promises better technical support, more
+  products, and faster shipping than last year's event.
 tags:
   - investment
   - technology
   - lifestyle
   - electronics
-image: "https://blog.indiancashback.com/articles/flipkart.png"
-readingTime: "2"
+image: 'https://blog.indiancashback.com/articles/flipkart.png'
+readingTime: '2'
 ---
 
 ![Flipkart BigBillion Days](https://blog.indiancashback.com/articles/flipkart.png)

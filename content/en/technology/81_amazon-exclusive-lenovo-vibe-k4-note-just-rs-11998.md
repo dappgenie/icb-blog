@@ -1,15 +1,18 @@
 ---
-title: "Amazon Exclusive: Lenovo Vibe K4 Note just @ Rs.11,998/-"
-date: 2016-01-09
-description: "Amazon exclusively launches the Lenovo Vibe K4 Note with TheatreMax technology on January 19th for just Rs.11,998. Experience movies and games on a super-size virtual screen with VR glasses and Dolby Atmos stereo speakers."
+title: 'Amazon Exclusive: Lenovo Vibe K4 Note just @ Rs.11,998/-'
+date: 09 Jan 2016
+description: >-
+  Amazon exclusively launches the Lenovo Vibe K4 Note with TheatreMax technology
+  on January 19th for just Rs.11,998. Experience movies and games on a
+  super-size virtual screen with VR glasses and Dolby Atmos stereo speakers.
 tags:
   - investment
   - technology
   - electronics
   - mobile
   - toys
-image: "https://blog.indiancashback.com/articles/sale2.png"
-readingTime: "4"
+image: 'https://blog.indiancashback.com/articles/sale2.png'
+readingTime: '4'
 ---
 
 ![Lenovo Vibe K4 Note](https://blog.indiancashback.com/articles/sale2.png)

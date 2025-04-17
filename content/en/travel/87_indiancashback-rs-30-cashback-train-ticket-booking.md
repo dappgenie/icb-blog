@@ -1,13 +1,16 @@
 ---
-title: "IndianCashback Exclusive: Rs.30 cashback on train ticket booking !!"
-date: 2016-01-11
-description: "Get Rs.30 cashback on every train ticket booking through Cleartrip via IndianCashback. Save money on your travel expenses with this exclusive offer and make your journeys more economical."
+title: 'IndianCashback Exclusive: Rs.30 cashback on train ticket booking !!'
+date: 11 Jan 2016
+description: >-
+  Get Rs.30 cashback on every train ticket booking through Cleartrip via
+  IndianCashback. Save money on your travel expenses with this exclusive offer
+  and make your journeys more economical.
 tags:
   - investment
   - travel
   - technology
-image: "https://blog.indiancashback.com/articles/sale4.png"
-readingTime: "4"
+image: 'https://blog.indiancashback.com/articles/sale4.png'
+readingTime: '4'
 ---
 
 ![Train Ticket Cashback](https://blog.indiancashback.com/articles/sale4.png)

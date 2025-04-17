@@ -1,13 +1,16 @@
 ---
-title: "Never before offer from Flipkart: Get 5% back as gift card"
-date: 2015-09-26
-description: "Flipkart is offering 5% cashback in the form of gift cards for purchases of gift cards worth Rs.2000 or above. Combined with IndianCashback rewards, you can save up to 7.5% on your Flipkart shopping."
+title: 'Never before offer from Flipkart: Get 5% back as gift card'
+date: 26 Sep 2015
+description: >-
+  Flipkart is offering 5% cashback in the form of gift cards for purchases of
+  gift cards worth Rs.2000 or above. Combined with IndianCashback rewards, you
+  can save up to 7.5% on your Flipkart shopping.
 tags:
   - investment
   - technology
   - lifestyle
-image: "https://blog.indiancashback.com/articles/sale1.png"
-readingTime: "2"
+image: 'https://blog.indiancashback.com/articles/sale1.png'
+readingTime: '2'
 ---
 
 ![Flipkart Gift Card Offer](https://blog.indiancashback.com/articles/sale1.png)
