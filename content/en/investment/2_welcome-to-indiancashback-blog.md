@@ -6,11 +6,11 @@ tags:
   - investment
   - lifestyle
   - technology
-image: "https://www.indiancashback.com/img/og-image.jpg"
+image: "https://www.indiancashback.com/img/welcome.png"
 readingTime: "4"
 ---
 
-![Welcome to IndianCashback](https://www.indiancashback.com/img/og-image.jpg)
+![Welcome to IndianCashback](https://www.indiancashback.com/img/welcome.png)
 
 Welcome to the IndianCashback Blog – your ultimate resource for smart online shopping and maximum savings! We're excited to launch this platform where we'll share the latest deals, money-saving strategies, and insider tips to help you make the most of your online shopping experience.
 
