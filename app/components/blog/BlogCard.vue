@@ -1,7 +1,7 @@
 <template>
-  <NuxtLink :to="article.path || '#'" class="block cursor-pointer">
+  <NuxtLink :to="article.path || '#'" class="block cursor-pointer h-full">
     <div
-      class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+      class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-full">
       <div class="relative h-36">
         <img
           :src="article.image || 'https://i0.wp.com/www.wuhcag.com/wp-content/uploads/2015/03/Google-on-MacBook.jpg?fit=1024%2C682&ssl=1'"
@@ -35,33 +35,33 @@
 
 <script setup lang="ts">
 defineProps({
-  article: {
-    type: Object,
-    required: false,
-    default: () => ({
-      title: '',
-      image: '',
-      date: '',
-      tags: [],
-      _path: '',
-    }),
-  },
-  readTime: {
-    type: String,
-    default: '5 min read',
-  },
-})
+	article: {
+		type: Object,
+		required: false,
+		default: () => ({
+			title: "",
+			image: "",
+			date: "",
+			tags: [],
+			_path: "",
+		}),
+	},
+	readTime: {
+		type: String,
+		default: "5 min read",
+	},
+});
 
 // Format date function
 const formatDate = (date: string) => {
-  if (!date) return 'No date'
+	if (!date) return "No date";
 
-  const options: Intl.DateTimeFormatOptions = {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  }
+	const options: Intl.DateTimeFormatOptions = {
+		year: "numeric",
+		month: "short",
+		day: "numeric",
+	};
 
-  return new Date(date).toLocaleDateString('en-US', options)
-}
+	return new Date(date).toLocaleDateString("en-US", options);
+};
 </script>
