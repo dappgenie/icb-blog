@@ -58,41 +58,10 @@ interface Article {
 
 // Fetch articles for the current category
 const { data: articles } = await useAsyncData(`${category.value}-articles-${locale.value}`, async () => {
-  const fetchedArticles = await queryCollection(contentCollection.value).all() as Article[]
-
-  // Sort articles by date (newest first)
-  return fetchedArticles.sort((a, b) => {
-    // Parse dates - handle different date formats
-    const dateA = parseArticleDate(a.date)
-    const dateB = parseArticleDate(b.date)
-
-    // Sort in descending order (newest first)
-    return dateB.getTime() - dateA.getTime()
-  })
+  return await queryCollection(contentCollection.value).all() as Article[]
 }, {
   watch: [locale, category],
 })
-
-// Helper function to parse article dates in different formats
-const parseArticleDate = (dateString?: string): Date => {
-  if (!dateString) return new Date(0) // Default to epoch if no date
-
-  // Try different date formats
-  // Format: DD/MM/YYYY
-  if (/^\d{2}\/\d{2}\/\d{4}$/.test(dateString)) {
-    const [day, month, year] = dateString.split('/').map(Number)
-    return new Date(year, month - 1, day)
-  }
-
-  // Format: YYYY-MM-DD
-  if (/^\d{4}-\d{2}-\d{2}$/.test(dateString)) {
-    return new Date(dateString)
-  }
-
-  // Try standard date parsing as fallback
-  const parsedDate = new Date(dateString)
-  return Number.isNaN(parsedDate.getTime()) ? new Date(0) : parsedDate
-}
 
 // Search functionality
 const searchQuery = ref('')
@@ -203,7 +172,7 @@ if (!articles.value || articles.value.length === 0) {
 
         <!-- Back button -->
         <div class="px-4 mt-4">
-          <button @click="goBackToHome" class="flex items-center text-sm text-primary hover:underline font-medium">
+          <button class="flex items-center text-sm text-primary hover:underline font-medium" @click="goBackToHome">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M19 12H5" />
