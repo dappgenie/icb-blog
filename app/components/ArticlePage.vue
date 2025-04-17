@@ -54,6 +54,11 @@ const collectionType = computed(() => {
         slug: '/lifestyle/articles',
         label: 'Lifestyle',
       }
+    case 'travel':
+      return {
+        slug: '/travel/articles',
+        label: 'Travel',
+      }
     default:
       return {
         slug: '/writings/articles',
@@ -74,11 +79,23 @@ const slugSegments = computed(() => {
   return []
 })
 
-const path = computed(() => withLeadingSlash(joinURL(locale.value, contentType.value, ...slugSegments.value)))
-const collection = computed(() => `${contentType.value}_${locale.value}` as keyof Collections)
+const path = computed(() =>
+  withLeadingSlash(
+    joinURL(locale.value, contentType.value, ...slugSegments.value),
+  ),
+)
+const collection = computed(
+  () => `${contentType.value}_${locale.value}` as keyof Collections,
+)
 
-const { data: page } = await useAsyncData(path.value, async () =>
-  await queryCollection(collection.value).path(path.value).first() as Collections['articles_en'] | Collections['articles_fr'] | Collections['technology_en'] | Collections['technology_fr'],
+const { data: page } = await useAsyncData(
+  path.value,
+  async () =>
+    (await queryCollection(collection.value).path(path.value).first()) as
+    | Collections['articles_en']
+    | Collections['articles_fr']
+    | Collections['technology_en']
+    | Collections['technology_fr'],
 )
 
 if (!page.value)
@@ -86,14 +103,25 @@ if (!page.value)
 
 // Safe property access function with explicit type parameters
 function getProperty<T>(obj: unknown, key: string, defaultValue: T): T {
-  return obj && typeof obj === 'object' && key in obj ? (obj as Record<string, unknown>)[key] as T : defaultValue
+  return obj && typeof obj === 'object' && key in obj
+    ? ((obj as Record<string, unknown>)[key] as T)
+    : defaultValue
 }
 
 // Check if the content has specific properties
-const hasTitle = computed(() => page.value && typeof page.value === 'object' && 'title' in page.value)
-const hasDate = computed(() => page.value && typeof page.value === 'object' && 'date' in page.value)
-const hasReadingTime = computed(() => page.value && typeof page.value === 'object' && 'readingTime' in page.value)
-const hasImage = computed(() => page.value && typeof page.value === 'object' && 'image' in page.value)
+const hasTitle = computed(
+  () => page.value && typeof page.value === 'object' && 'title' in page.value,
+)
+const hasDate = computed(
+  () => page.value && typeof page.value === 'object' && 'date' in page.value,
+)
+const hasReadingTime = computed(
+  () =>
+    page.value && typeof page.value === 'object' && 'readingTime' in page.value,
+)
+const hasImage = computed(
+  () => page.value && typeof page.value === 'object' && 'image' in page.value,
+)
 
 // Safe property getters
 const title = computed(() => getProperty(page.value, 'title', ''))

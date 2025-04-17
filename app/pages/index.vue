@@ -63,6 +63,14 @@ const { data: lifestyleList } = await useAsyncData(`lifestyle-${locale.value}`, 
   watch: [locale],
 })
 
+// Fetch travel data
+const { data: travelList } = await useAsyncData(`travel-${locale.value}`, async () => {
+  const collection = (`travel_${locale.value}`) as keyof Collections
+  return await queryCollection(collection).all() as Article[]
+}, {
+  watch: [locale],
+})
+
 // Search functionality
 const searchQuery = ref('')
 const isSearching = computed(() => searchQuery.value.trim().length > 0)
@@ -137,6 +145,11 @@ const visibleLifestyle = computed(() => {
   return lifestyleList.value ? filterArticles([...lifestyleList.value]) : []
 })
 
+const visibleTravel = computed(() => {
+  return travelList.value ? filterArticles([...travelList.value]) : []
+})
+
+
 // Get all articles across categories for search results
 const allArticles = computed(() => {
   const articles: Article[] = []
@@ -146,6 +159,7 @@ const allArticles = computed(() => {
   if (healthList.value) articles.push(...healthList.value)
   if (fashionList.value) articles.push(...fashionList.value)
   if (lifestyleList.value) articles.push(...lifestyleList.value)
+  if (travelList.value) articles.push(...travelList.value)
 
   return articles
 })
@@ -277,6 +291,9 @@ if (!technologiesList.value && !investmentList.value)
             <!-- Lifestyle section -->
             <BlogSection v-if="visibleLifestyle?.length" title="Lifestyle" :articles="visibleLifestyle"
               :max-items="5" />
+
+            <!-- Travel section -->
+            <BlogSection v-if="visibleTravel?.length" title="Travel" :articles="visibleTravel" :max-items="5" />
           </template>
         </div>
       </div>
