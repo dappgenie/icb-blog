@@ -6,7 +6,7 @@ tags:
   - investment
   - technology
   - lifestyle
-image: "https://blog.indiancashback.com/sale.png"
+image: "https://blog.indiancashback.com/articles/sale.png"
 readingTime: "3"
 ---
 
