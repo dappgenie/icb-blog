@@ -9,11 +9,11 @@ tags:
   - investment
   - technology
   - lifestyle
-image: 'https://blog.indiancashback.com/articles/sale1.png'
+image: 'https://blog.indiancashback.com/articles/sale.png'
 readingTime: '2'
 ---
 
-![Flipkart Gift Card Offer](https://blog.indiancashback.com/articles/sale1.png)
+![Flipkart Gift Card Offer](https://blog.indiancashback.com/articles/sale.png)
 
 
 Have you ever used or gifted Flipkart gift vouchers?
