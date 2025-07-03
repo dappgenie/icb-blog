@@ -53,12 +53,49 @@ interface Article {
   image?: string
   date?: string
   path?: string
-  [key: string]: string // For other properties
+  [key: string]: any // For other properties
+}
+
+// Helper function to parse and sort articles by date
+const sortArticlesByDate = (articles: any[]): Article[] => {
+  if (!articles) return []
+
+  return [...articles].sort((a, b) => {
+    // Handle different date formats and missing dates
+    const getDateValue = (article: any): number => {
+      if (!article.date) return 0
+
+      // Try to parse the date - handle various formats
+      let dateStr = article.date
+
+      // If it's in format "05 Sep 2015", convert to proper format
+      if (typeof dateStr === 'string' && dateStr.match(/^\d{1,2}\s\w{3}\s\d{4}$/)) {
+        const parts = dateStr.split(' ')
+        const day = parts[0]
+        const month = parts[1]
+        const year = parts[2]
+        const monthMap: Record<string, string> = {
+          Jan: '01', Feb: '02', Mar: '03', Apr: '04',
+          May: '05', Jun: '06', Jul: '07', Aug: '08',
+          Sep: '09', Oct: '10', Nov: '11', Dec: '12',
+        }
+        if (day && month && year && monthMap[month]) {
+          dateStr = `${year}-${monthMap[month]}-${day.padStart(2, '0')}`
+        }
+      }
+
+      const date = new Date(dateStr)
+      return isNaN(date.getTime()) ? 0 : date.getTime()
+    }
+
+    return getDateValue(b) - getDateValue(a) // Sort descending (newest first)
+  })
 }
 
 // Fetch articles for the current category
 const { data: articles } = await useAsyncData(`${category.value}-articles-${locale.value}`, async () => {
-  return await queryCollection(contentCollection.value).all() as Article[]
+  const rawArticles = await queryCollection(contentCollection.value).all() as any[]
+  return sortArticlesByDate(rawArticles)
 }, {
   watch: [locale, category],
 })

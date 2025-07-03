@@ -9,23 +9,11 @@
     <div class="grid lg:grid-cols-10 grid-cols-3 lg:px-[100px] px-[16px] pb-[40px] gap-y-6 md:gap-y-0 gap-x-3">
       <!-- ICB Logo and Description -->
       <div class="col-span-3 lg:col-span-3 flex flex-col items-start mb-6 lg:mb-0">
-        <NuxtLink
-          class="flex items-center mb-4"
-          href="https://indiancashback.com/"
-          target="_blank"
-        >
-          <!-- ICB Logo placeholder - you'll need to add your actual logo component -->
-          <NuxtImg
-            src="/svg/footer-cards/logo.svg"
-            alt="ICB Logo"
-            class="w-[40px] h-[30px] mr-2 flex items-center justify-center !text-white brightness-0 invert"
-          />
-          <div class="flex flex-col">
-            <span class="text-white font-nexa text-sm font-bold">
-              Indian CashBack
-            </span>
-          </div>
-        </NuxtLink>
+          <NuxtLink target="_blank" to="https://indiancashback.com/"
+            class="flex gap-[8px] items-center cursor-pointer transition-all duration-300">
+            <NuxtImg alt="" fetchpriority="high" width="260" height="140" decoding="async" data-nimg="1"
+              class="h-[50px] w-[200px]" style="color:transparent" src="/svg/icb-logo-full.svg" />
+          </NuxtLink>
         <h1 class="text-[#CDC7FF] text-xs leading-relaxed mb-4 max-w-xl lg:max-w-[280px] font-bold">
           India's leading cashback and coupons website.
         </h1>
@@ -68,32 +56,31 @@
               My Tickets
             </NuxtLink>
             <NuxtLink
-              href="https://tawk.to/indiancashback"
-              target="_blank"
-              class="hover:text-white transition-colors duration-200 hover:underline"
-            >
-              Support
-            </NuxtLink>
-            <NuxtLink
-              href="/faqs"
-              target="_blank"
-              class="hover:text-white transition-colors duration-200 hover:underline"
-            >
-              FAQ
-            </NuxtLink>
-            <NuxtLink
-              href="https://blog.indiancashback.com/en"
-              target="_blank"
+              href="/"
               class="hover:text-white transition-colors duration-200 hover:underline"
             >
               Blog
             </NuxtLink>
             <NuxtLink
-              href="/about-us"
+              href="https://indiancashback.com/link-generator"
+              target="_blank"
+              class="hover:text-white transition-colors duration-200 hover:underline"
+            >
+              Share & Earn
+            </NuxtLink>
+            <NuxtLink
+              href="https://indiancashback.com/about-us"
               target="_blank"
               class="hover:text-white transition-colors duration-200 hover:underline"
             >
               About ICB
+            </NuxtLink>
+            <NuxtLink
+              href="https://indiancashback.com/team"
+              target="_blank"
+              class="hover:text-white transition-colors duration-200 hover:underline"
+            >
+              Meet the Team
             </NuxtLink>
           </div>
         </div>
@@ -109,6 +96,13 @@
               class="hover:text-white transition-colors duration-200 hover:underline"
             >
               Contact Us
+            </NuxtLink>
+            <NuxtLink
+              href="https://indiancashback.com/faqs"
+              target="_blank"
+              class="hover:text-white transition-colors duration-200 hover:underline"
+            >
+              FAQ
             </NuxtLink>
             <NuxtLink
               href="https://indiancashbackcom.tawk.help/article/understanding-how-indiancashback-works"

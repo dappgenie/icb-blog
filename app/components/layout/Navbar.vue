@@ -18,9 +18,9 @@ const _localePath = useLocalePath()
     <!-- Mobile Header -->
     <div class="lg:hidden t-0 l-0 flex flex-col w-full">
       <div class="flex justify-between items-center h-[65px] px-[20px] mainHeader w-full z-[999]">
-        <NuxtLink class="ml-[13px]" to="/">
+        <NuxtLink class="ml-[13px]" target="_blank" to="https://indiancashback.com/">
           <NuxtImg alt="" fetchpriority="high" width="100" height="150" decoding="async" data-nimg="1"
-            class="h-[100px] w-[75px] mb-[15px]" style="color:transparent" src="/assets/icb-beta-mobile-logo.svg" />
+            class="h-auto w-[40px] lg:hidden block" style="color:transparent" src="/svg/icb-logo.svg" />
         </NuxtLink>
 
         <NuxtLink target="_blank" to="https://indiancashback.com/"
@@ -66,10 +66,10 @@ const _localePath = useLocalePath()
       <!-- Upper section with logo and login button -->
       <div class="w-full bg-primary">
         <div class="h-[63px] w-full flex justify-between items-center container mx-auto px-0 xl:px-4">
-          <NuxtLink to="/"
-            class="flex gap-[8px] items-center cursor-pointer hover:scale-105 transition-all duration-300">
+          <NuxtLink target="_blank" to="https://indiancashback.com/"
+            class="flex gap-[8px] items-center cursor-pointer transition-all duration-300">
             <NuxtImg alt="" fetchpriority="high" width="260" height="140" decoding="async" data-nimg="1"
-              class="h-[110px] w-[240px]" style="color:transparent" src="/assets/icb-beta-logo.svg" />
+              class="h-[50px] w-[200px]" style="color:transparent" src="/svg/icb-logo-full.svg" />
           </NuxtLink>
 
           <div class="flex items-center">
@@ -97,12 +97,6 @@ const _localePath = useLocalePath()
           <div class="w-full max-w-[1280px] mx-[60px] h-full min-[1440px]:mx-auto flex justify-center relative">
             <!-- Tabs for Cashback and ICB Card -->
             <div class="mx-auto flex">
-              <NuxtLink class="nav-menu" to="/about">
-                About ICB
-              </NuxtLink>
-              <NuxtLink class="nav-menu" to="/">
-                Blogs
-              </NuxtLink>
               <NuxtLink class="nav-menu" to="https://indiancashback.com">
                 Cashback
               </NuxtLink>
@@ -111,6 +105,12 @@ const _localePath = useLocalePath()
                 <div class="bg-primary text-white text-[10px] p-1 ml-1 rounded-sm font-light">
                   Beta
                 </div>
+              </NuxtLink>
+              <NuxtLink class="nav-menu" to="https://indiancashback.com/link-generator">
+                Share & Earn
+              </NuxtLink>
+              <NuxtLink class="nav-menu" to="/">
+                Blogs
               </NuxtLink>
             </div>
           </div>

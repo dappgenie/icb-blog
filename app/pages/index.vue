@@ -23,10 +23,47 @@ interface Article {
   [key: string]: unknown // For other properties
 }
 
+// Helper function to parse and sort articles by date
+const sortArticlesByDate = (articles: any[]): Article[] => {
+  if (!articles) return []
+
+  return [...articles].sort((a, b) => {
+    // Handle different date formats and missing dates
+    const getDateValue = (article: any): number => {
+      if (!article.date) return 0
+
+      // Try to parse the date - handle various formats
+      let dateStr = article.date
+
+      // If it's in format "05 Sep 2015", convert to proper format
+      if (typeof dateStr === 'string' && dateStr.match(/^\d{1,2}\s\w{3}\s\d{4}$/)) {
+        const parts = dateStr.split(' ')
+        const day = parts[0]
+        const month = parts[1]
+        const year = parts[2]
+        const monthMap: Record<string, string> = {
+          Jan: '01', Feb: '02', Mar: '03', Apr: '04',
+          May: '05', Jun: '06', Jul: '07', Aug: '08',
+          Sep: '09', Oct: '10', Nov: '11', Dec: '12',
+        }
+        if (day && month && year && monthMap[month]) {
+          dateStr = `${year}-${monthMap[month]}-${day.padStart(2, '0')}`
+        }
+      }
+
+      const date = new Date(dateStr)
+      return isNaN(date.getTime()) ? 0 : date.getTime()
+    }
+
+    return getDateValue(b) - getDateValue(a) // Sort descending (newest first)
+  })
+}
+
 // Fetch technologies data
 const { data: technologiesList } = await useAsyncData(`technology-${locale.value}`, async () => {
   const collection = (`technology_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Article[]
+  const articles = await queryCollection(collection).all() as any[]
+  return sortArticlesByDate(articles)
 }, {
   watch: [locale],
 })
@@ -34,7 +71,8 @@ const { data: technologiesList } = await useAsyncData(`technology-${locale.value
 // Fetch cashback data
 const { data: investmentList } = await useAsyncData(`investment-${locale.value}`, async () => {
   const collection = (`investment_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Article[]
+  const articles = await queryCollection(collection).all() as any[]
+  return sortArticlesByDate(articles)
 }, {
   watch: [locale],
 })
@@ -42,7 +80,8 @@ const { data: investmentList } = await useAsyncData(`investment-${locale.value}`
 // Fetch health and wellness data
 const { data: healthList } = await useAsyncData(`health-${locale.value}`, async () => {
   const collection = (`health_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Article[]
+  const articles = await queryCollection(collection).all() as any[]
+  return sortArticlesByDate(articles)
 }, {
   watch: [locale],
 })
@@ -50,7 +89,8 @@ const { data: healthList } = await useAsyncData(`health-${locale.value}`, async 
 // Fetch fashion data
 const { data: fashionList } = await useAsyncData(`fashion-${locale.value}`, async () => {
   const collection = (`fashion_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Article[]
+  const articles = await queryCollection(collection).all() as any[]
+  return sortArticlesByDate(articles)
 }, {
   watch: [locale],
 })
@@ -58,7 +98,8 @@ const { data: fashionList } = await useAsyncData(`fashion-${locale.value}`, asyn
 // Fetch lifestyle data
 const { data: lifestyleList } = await useAsyncData(`lifestyle-${locale.value}`, async () => {
   const collection = (`lifestyle_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Article[]
+  const articles = await queryCollection(collection).all() as any[]
+  return sortArticlesByDate(articles)
 }, {
   watch: [locale],
 })
@@ -66,7 +107,8 @@ const { data: lifestyleList } = await useAsyncData(`lifestyle-${locale.value}`, 
 // Fetch travel data
 const { data: travelList } = await useAsyncData(`travel-${locale.value}`, async () => {
   const collection = (`travel_${locale.value}`) as keyof Collections
-  return await queryCollection(collection).all() as Article[]
+  const articles = await queryCollection(collection).all() as any[]
+  return sortArticlesByDate(articles)
 }, {
   watch: [locale],
 })
@@ -149,7 +191,6 @@ const visibleTravel = computed(() => {
   return travelList.value ? filterArticles([...travelList.value]) : []
 })
 
-
 // Get all articles across categories for search results
 const allArticles = computed(() => {
   const articles: Article[] = []
@@ -161,7 +202,13 @@ const allArticles = computed(() => {
   if (lifestyleList.value) articles.push(...lifestyleList.value)
   if (travelList.value) articles.push(...travelList.value)
 
-  return articles
+  return sortArticlesByDate(articles)
+})
+
+// Get the most recent article across all categories for featured blog
+const mostRecentArticle = computed(() => {
+  const articles = allArticles.value
+  return articles.length > 0 ? articles[0] : {}
 })
 
 // Filtered search results across all categories
@@ -186,16 +233,21 @@ const categories = ref([
   { id: 'electronics', label: 'Electronics' },
   { id: 'home_appliances', label: 'Home Appliances' },
   { id: 'medicine', label: 'Medicine and Fitness' },
+  { id: 'books', label: 'Books and Learning' },
+  { id: 'sports', label: 'Sports and Fitness' },
   { id: 'travel', label: 'Travel' },
-  { id: 'toys', label: 'Toys and Entertainment' },
-  { id: 'grocery', label: 'Grocery' },
-  { id: 'beauty', label: 'Beauty and Cosmetics' },
-  { id: 'mobile', label: 'Mobile Accessories' },
-  { id: 'furniture', label: 'Furniture' },
-  { id: 'food', label: 'Food and Beverages' },
+  { id: 'food', label: 'Food and Drinks' },
+  { id: 'automotive', label: 'Automotive' },
+  { id: 'beauty', label: 'Beauty and Personal Care' },
+  { id: 'home_garden', label: 'Home and Garden' },
+  { id: 'baby', label: 'Baby and Kids' },
+  { id: 'pets', label: 'Pets and Animals' },
+  { id: 'finance', label: 'Finance and Banking' },
+  { id: 'education', label: 'Education and Learning' },
+  { id: 'entertainment', label: 'Entertainment' },
 ])
 
-// Clear all filters
+// Helper function to clear all filters
 const clearFilters = () => {
   searchQuery.value = ''
   selectedCategories.value = []
@@ -211,31 +263,54 @@ if (!technologiesList.value && !investmentList.value)
       <!-- Blogs section -->
       <div class="flex flex-col space-x-6 mb-6">
         <!-- Blogs header with search -->
-        <BlogsHeader title="Blogs" @search="handleSearch" />
+        <BlogsHeader
+          title="Blogs"
+          @search="handleSearch"
+        />
 
         <!-- Filter indicators -->
-        <div v-if="isFiltering" class="px-4 mt-4 flex flex-wrap items-center gap-2">
+        <div
+          v-if="isFiltering"
+          class="px-4 mt-4 flex flex-wrap items-center gap-2"
+        >
           <!-- Search indicator -->
-          <div v-if="isSearching" class="text-sm text-gray-600">
+          <div
+            v-if="isSearching"
+            class="text-sm text-gray-600"
+          >
             Found {{ searchResultsCount }} result{{ searchResultsCount !== 1 ? 's' : '' }} for "{{ searchQuery }}"
           </div>
 
           <!-- Category filters indicator -->
-          <div v-if="isFilteringByCategory" class="flex flex-wrap gap-1 items-center">
-            <span v-if="!isSearching" class="text-sm text-gray-600">Filtered by:</span>
-            <div v-for="catId in selectedCategories" :key="catId"
-              class="bg-primary text-white text-xs px-2 py-1 rounded-full flex items-center">
-              {{categories.find(c => c.id === catId)?.label}}
-              <button class="ml-1 text-white hover:text-gray-200"
-                @click="selectedCategories = selectedCategories.filter(id => id !== catId)">
+          <div
+            v-if="isFilteringByCategory"
+            class="flex flex-wrap gap-1 items-center"
+          >
+            <span
+              v-if="!isSearching"
+              class="text-sm text-gray-600"
+            >Filtered by:</span>
+            <div
+              v-for="catId in selectedCategories"
+              :key="catId"
+              class="bg-primary text-white text-xs px-2 py-1 rounded-full flex items-center"
+            >
+              {{ categories.find(c => c.id === catId)?.label }}
+              <button
+                class="ml-1 text-white hover:text-gray-200"
+                @click="selectedCategories = selectedCategories.filter(id => id !== catId)"
+              >
                 ×
               </button>
             </div>
           </div>
 
           <!-- Clear filters button -->
-          <button v-if="isFiltering" class="text-xs text-gray-500 hover:text-primary ml-auto underline"
-            @click="clearFilters">
+          <button
+            v-if="isFiltering"
+            class="text-xs text-gray-500 hover:text-primary ml-auto underline"
+            @click="clearFilters"
+          >
             Clear all filters
           </button>
         </div>
@@ -243,26 +318,44 @@ if (!technologiesList.value && !investmentList.value)
         <!-- Main content area -->
         <div class="flex-1 px-4 mt-6">
           <!-- Categories -->
-          <CategoriesSection v-model="selectedCategories" :categories="categories" />
+          <CategoriesSection
+            v-model="selectedCategories"
+            :categories="categories"
+          />
 
           <!-- Search/Filter results section -->
-          <div v-if="isFiltering" class="mb-8 bg-white rounded-lg p-4">
+          <div
+            v-if="isFiltering"
+            class="mb-8 bg-white rounded-lg p-4"
+          >
             <div class="mb-4">
               <h3 class="text-sm text-primary font-semibold">
                 {{ isSearching ? 'Search Results' : 'Filtered Results' }}
               </h3>
             </div>
 
-            <div v-if="searchResults.length"
-              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              <BlogCard v-for="(article, index) in searchResults" :key="index" :article="article" />
+            <div
+              v-if="searchResults.length"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+            >
+              <BlogCard
+                v-for="(article, index) in searchResults"
+                :key="index"
+                :article="article"
+              />
             </div>
 
-            <div v-else class="text-center py-8">
+            <div
+              v-else
+              class="text-center py-8"
+            >
               <p class="text-gray-500">
                 No articles found matching your criteria.
               </p>
-              <button class="mt-2 text-primary hover:underline" @click="clearFilters">
+              <button
+                class="mt-2 text-primary hover:underline"
+                @click="clearFilters"
+              >
                 Clear filters
               </button>
             </div>
@@ -270,30 +363,63 @@ if (!technologiesList.value && !investmentList.value)
 
           <!-- Regular content (shown when not filtering) -->
           <template v-if="!isFiltering">
-            <!-- Featured blog post -->
-            <FeaturedBlogPost :post="visibleInvestment?.[0] ?? {}" />
+            <!-- Featured blog post - now shows the most recent article across all categories -->
+            <div class="mb-8 bg-white rounded-lg p-4 shadow-sm">
+              <div class="mb-4">
+                <h3 class="text-sm text-primary font-semibold">
+                  Latest Article
+                </h3>
+              </div>
+              <FeaturedBlogPost :post="mostRecentArticle" />
+            </div>
 
             <!-- Investment section -->
-            <BlogSection v-if="visibleInvestment?.length" title="Investment" :articles="visibleInvestment"
-              :max-items="5" />
+            <BlogSection
+              v-if="visibleInvestment?.length"
+              title="Investment"
+              :articles="visibleInvestment"
+              :max-items="5"
+            />
 
             <!-- Technology section -->
-            <BlogSection v-if="visibleTechnologies?.length" title="Technology" :articles="visibleTechnologies"
-              :max-items="5" />
+            <BlogSection
+              v-if="visibleTechnologies?.length"
+              title="Technology"
+              :articles="visibleTechnologies"
+              :max-items="5"
+            />
 
             <!-- Health and Wellness section -->
-            <BlogSection v-if="visibleHealth?.length" title="Health and Wellness" :articles="visibleHealth"
-              :max-items="5" />
+            <BlogSection
+              v-if="visibleHealth?.length"
+              title="Health and Wellness"
+              :articles="visibleHealth"
+              :max-items="5"
+            />
 
             <!-- Fashion section -->
-            <BlogSection v-if="visibleFashion?.length" title="Fashion" :articles="visibleFashion" :max-items="5" />
+            <BlogSection
+              v-if="visibleFashion?.length"
+              title="Fashion"
+              :articles="visibleFashion"
+              :max-items="5"
+            />
 
             <!-- Lifestyle section -->
-            <BlogSection v-if="visibleLifestyle?.length" title="Lifestyle" :articles="visibleLifestyle"
-              :max-items="5" />
+            <BlogSection
+              v-if="visibleLifestyle?.length"
+              title="Lifestyle"
+              :articles="visibleLifestyle"
+              :max-items="5"
+            />
 
             <!-- Travel section -->
-            <BlogSection v-if="visibleTravel?.length" title="Travel" :articles="visibleTravel" :max-items="5" />
+            <BlogSection
+              v-if="visibleTravel?.length"
+              title="Travel"
+              :articles="visibleTravel"
+              :max-items="5"
+            />
           </template>
         </div>
       </div>
