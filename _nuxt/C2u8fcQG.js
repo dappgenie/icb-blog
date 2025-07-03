@@ -1,0 +1,1 @@
+import{_ as r}from"./DlAUqK2U.js";import{c as o,d as s,a0 as t}from"./DbmyUEix.js";const n={};function a(e,c){return s(),o("ul",null,[t(e.$slots,"default")])}const f=Object.assign(r(n,[["render",a]]),{__name:"ProseUl"});export{f as default};
