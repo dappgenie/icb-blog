@@ -39,21 +39,21 @@ const _localePath = useLocalePath()
         </NuxtLink>
       </div>
       <div class="w-full bg-secondary h-[41px]">
-        <div class="flex justify-center items-center text-[12px] bg-secondary h-full">
-          <div class="w-full max-w-[1280px] mx-[60px] h-full flex justify-center relative">
+        <div class="flex justify-center items-center text-[10px] sm:text-[12px] bg-secondary h-full">
+          <div class="w-full max-w-[1280px] mx-3 sm:mx-[60px] h-full flex justify-center relative">
             <!-- Tabs for Cashback and ICB Card -->
-            <div class="mx-auto flex flex-wrap justify-center items-center gap-x-2 md:gap-x-3 gap-y-1 h-full">
-              <NuxtLink class="nav-menu" to="/about">
-                About
-              </NuxtLink>
-              <NuxtLink class="nav-menu" to="/">
-                Blogs
-              </NuxtLink>
+            <div class="w-full mx-auto flex flex-wrap justify-center items-center gap-x-2 md:gap-x-3 gap-y-1 h-full">
               <NuxtLink class="nav-menu" href="https://indiancashback.com">
                 Cashback
               </NuxtLink>
               <NuxtLink class="nav-menu" to="https://card.indiancashback.com">
                 ICB Card
+              </NuxtLink>
+              <NuxtLink class="nav-menu" to="https://indiancashback.com/share-and-earn">
+                Share & Earn
+              </NuxtLink>
+              <NuxtLink class="nav-menu" to="/">
+                Blogs
               </NuxtLink>
             </div>
           </div>

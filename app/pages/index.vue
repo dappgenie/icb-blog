@@ -317,6 +317,18 @@ if (!technologiesList.value && !investmentList.value)
 
         <!-- Main content area -->
         <div class="flex-1 px-4 mt-6">
+          <!-- Featured blog post - now shows the most recent article across all categories -->
+          <div
+            v-if="!isFiltering"
+            class="lg:hidden block mb-6 bg-white rounded-lg p-4 shadow-sm mx-auto w-full"
+          >
+            <div class="mb-4">
+              <h3 class="text-sm text-primary font-semibold">
+                Latest Article
+              </h3>
+            </div>
+            <FeaturedBlogPost :post="mostRecentArticle" />
+          </div>
           <!-- Categories -->
           <CategoriesSection
             v-model="selectedCategories"
@@ -364,7 +376,7 @@ if (!technologiesList.value && !investmentList.value)
           <!-- Regular content (shown when not filtering) -->
           <template v-if="!isFiltering">
             <!-- Featured blog post - now shows the most recent article across all categories -->
-            <div class="mb-8 bg-white rounded-lg p-4 shadow-sm">
+            <div class="hidden lg:block mb-8 bg-white rounded-lg p-4 shadow-sm">
               <div class="mb-4">
                 <h3 class="text-sm text-primary font-semibold">
                   Latest Article

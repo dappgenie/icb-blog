@@ -42,10 +42,10 @@
       </div>
 
       <div class="col-span-3 lg:col-span-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-6">
-        <!-- Knowledge Base Section -->
+        <!-- Resource Center Section -->
         <div class="text-white">
           <p class="py-3 text-xs md:text-sm lg:text-base font-medium">
-            Knowledge Base
+            Resources
           </p>
           <div class="font-light text-[#CDC7FF] text-xs flex-col flex gap-3">
             <NuxtLink
@@ -62,7 +62,14 @@
               Blog
             </NuxtLink>
             <NuxtLink
-              href="https://indiancashback.com/link-generator"
+              href="https://indiancashback.com/referral"
+              target="_blank"
+              class="hover:text-white transition-colors duration-200 hover:underline"
+            >
+              Refer & Earn
+            </NuxtLink>
+            <NuxtLink
+              href="https://indiancashback.com/share-and-earn"
               target="_blank"
               class="hover:text-white transition-colors duration-200 hover:underline"
             >
